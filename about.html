@@ -1,0 +1,1533 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<!-- ===================== BASICS ===================== -->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- ===================== SECURITY ===================== -->
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' https: data:; connect-src 'none'; form-action 'none'; base-uri 'none'; object-src 'none'; frame-src 'none'; upgrade-insecure-requests">
+
+<!-- ===================== SEO ===================== -->
+<title>About Us | M.Tech Ahmedabad</title>
+
+<meta name="description" content="About M.Tech Ahmedabad Computer Store - laptops, desktops, CCTV, printers and accessories, with practical advice and reliable technical support.">
+
+<link rel="canonical" href="https://www.mtechahmedabad.com/about.html">
+
+<meta name="theme-color" content="#050816">
+<meta name="robots" content="index, follow">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="M.Tech Ahmedabad">
+<meta property="og:title" content="About Us | M.Tech Ahmedabad">
+<meta property="og:description" content="M.Tech is a computer and technology store in Ahmedabad offering laptops, desktops, CCTV, printers and accessories.">
+<meta property="og:url" content="https://www.mtechahmedabad.com/about.html">
+<meta property="og:image" content="https://www.mtechahmedabad.com/logoo.png">
+<meta name="twitter:card" content="summary">
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23050816'/%3E%3Ctext x='16' y='23' font-family='Arial,Helvetica,sans-serif' font-size='19' font-weight='bold' fill='%2300d4ff' text-anchor='middle'%3EM%3C/text%3E%3C/svg%3E">
+
+<!-- ===================== FONTS ===================== -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+/* =====================================================
+   BASIC
+===================================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#050816;
+    color:white;
+    overflow-x:hidden;
+}
+
+img{
+    max-width:100%;
+}
+
+
+/* =====================================================
+   ACCESSIBILITY HELPERS
+===================================================== */
+
+.skip-link{
+    position:absolute;
+    left:-9999px;
+    top:0;
+    z-index:2000;
+    padding:12px 18px;
+    border-radius:0 0 10px 0;
+    background:#00d4ff;
+    color:#050816;
+    font-weight:700;
+    text-decoration:none;
+}
+
+.skip-link:focus{
+    left:0;
+}
+
+a:focus-visible,
+button:focus-visible{
+    outline:3px solid #00d4ff;
+    outline-offset:3px;
+    border-radius:6px;
+}
+
+.sr-only{
+    position:absolute;
+    width:1px;
+    height:1px;
+    padding:0;
+    margin:-1px;
+    overflow:hidden;
+    clip:rect(0,0,0,0);
+    white-space:nowrap;
+    border:0;
+}
+
+@media(prefers-reduced-motion:reduce){
+
+    html{
+        scroll-behavior:auto;
+    }
+
+    *,
+    *::before,
+    *::after{
+        animation-duration:.001ms!important;
+        animation-iteration-count:1!important;
+        transition-duration:.001ms!important;
+        scroll-behavior:auto!important;
+    }
+}
+
+
+/* =====================================================
+   BACKGROUND GLOW
+===================================================== */
+
+body::before{
+    content:"";
+    position:fixed;
+    top:-200px;
+    left:-200px;
+    width:500px;
+    height:500px;
+    background:#00bfff30;
+    filter:blur(180px);
+    z-index:-1;
+    pointer-events:none;
+}
+
+body::after{
+    content:"";
+    position:fixed;
+    bottom:-200px;
+    right:-200px;
+    width:500px;
+    height:500px;
+    background:#7c3aed40;
+    filter:blur(180px);
+    z-index:-1;
+    pointer-events:none;
+}
+
+
+/* =====================================================
+   HEADER
+===================================================== */
+
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:22px 8%;
+    background:rgba(255,255,255,0.05);
+    -webkit-backdrop-filter:blur(20px);
+    backdrop-filter:blur(20px);
+    border-bottom:1px solid rgba(255,255,255,0.1);
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+.brand{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    flex-shrink:0;
+    color:white;
+    text-decoration:none;
+}
+
+.brand-logo{
+    display:block;
+    width:100px;
+    height:auto;
+    max-width:40vw;
+}
+
+.brand-text{
+    display:none;
+    font-size:26px;
+    font-weight:700;
+    color:white;
+    white-space:nowrap;
+}
+
+.brand-text span{
+    color:#00d4ff;
+}
+
+html.no-logo .brand-logo{
+    display:none;
+}
+
+html.no-logo .brand-text{
+    display:inline-block;
+}
+
+nav{
+    display:flex;
+    gap:25px;
+}
+
+nav a{
+    color:#ddd;
+    text-decoration:none;
+    font-weight:500;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:#00d4ff;
+}
+
+nav a[aria-current="page"]{
+    color:#00d4ff;
+}
+
+
+/* =====================================================
+   HERO
+===================================================== */
+
+.hero{
+    min-height:620px;
+    padding:110px 8% 90px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+}
+
+.hero-content{
+    max-width:900px;
+}
+
+.eyebrow{
+    display:inline-block;
+    padding:9px 18px;
+    border:1px solid rgba(0,212,255,0.3);
+    border-radius:30px;
+    background:rgba(0,212,255,0.07);
+    color:#00d4ff;
+    font-size:13px;
+    font-weight:bold;
+    letter-spacing:2px;
+    margin-bottom:25px;
+}
+
+.hero h1{
+    font-size:68px;
+    line-height:1.08;
+    overflow-wrap:break-word;
+    background:linear-gradient(90deg,#ffffff,#00d4ff,#7c3aed);
+    -webkit-background-clip:text;
+    background-clip:text;
+    -webkit-text-fill-color:transparent;
+    color:transparent;
+    margin-bottom:25px;
+}
+
+.hero p{
+    max-width:760px;
+    margin:auto;
+    color:#aaa;
+    font-size:18px;
+    line-height:1.8;
+}
+
+
+/* =====================================================
+   COMMON
+===================================================== */
+
+.section{
+    width:90%;
+    max-width:1200px;
+    margin:0 auto 110px;
+}
+
+.section-heading{
+    text-align:center;
+    margin-bottom:55px;
+}
+
+.small-title{
+    color:#00d4ff;
+    font-size:13px;
+    font-weight:bold;
+    letter-spacing:2px;
+    text-transform:uppercase;
+    margin-bottom:12px;
+}
+
+.section-heading h2{
+    font-size:42px;
+    margin-bottom:16px;
+    overflow-wrap:break-word;
+}
+
+.section-heading p{
+    max-width:700px;
+    margin:auto;
+    color:#aaa;
+    line-height:1.8;
+}
+
+
+/* =====================================================
+   STORY
+===================================================== */
+
+.story-grid{
+    display:grid;
+    grid-template-columns:1.05fr 1fr;
+    gap:55px;
+    align-items:center;
+}
+
+.story-card{
+    min-height:430px;
+    padding:45px;
+    border-radius:30px;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(0,212,255,0.12),
+            rgba(124,58,237,0.12)
+        ),
+        rgba(255,255,255,0.04);
+
+    border:1px solid rgba(255,255,255,0.1);
+    -webkit-backdrop-filter:blur(20px);
+    backdrop-filter:blur(20px);
+    position:relative;
+    overflow:hidden;
+}
+
+.story-card::before{
+    content:"M";
+    position:absolute;
+    right:-35px;
+    bottom:-80px;
+    font-size:330px;
+    font-weight:bold;
+    color:rgba(0,212,255,0.035);
+    line-height:1;
+    pointer-events:none;
+}
+
+.story-card h3{
+    font-size:34px;
+    margin-bottom:20px;
+    position:relative;
+    z-index:1;
+}
+
+.story-card p{
+    color:#aaa;
+    line-height:1.9;
+    margin-bottom:18px;
+    position:relative;
+    z-index:1;
+}
+
+.story-text h3{
+    font-size:32px;
+    margin-bottom:18px;
+}
+
+.story-text p{
+    color:#aaa;
+    line-height:1.9;
+    margin-bottom:20px;
+}
+
+.highlight{
+    color:#00d4ff;
+    font-weight:bold;
+}
+
+
+/* =====================================================
+   STATS
+===================================================== */
+
+.stats{
+    width:90%;
+    max-width:1200px;
+    margin:0 auto 110px;
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:20px;
+}
+
+.stat-box{
+    padding:32px 20px;
+    text-align:center;
+    border-radius:22px;
+    background:rgba(255,255,255,0.05);
+    border:1px solid rgba(255,255,255,0.1);
+    -webkit-backdrop-filter:blur(20px);
+    backdrop-filter:blur(20px);
+    transition:0.35s;
+}
+
+.stat-box:hover{
+    transform:translateY(-7px);
+    border-color:rgba(0,212,255,0.35);
+    box-shadow:0 18px 45px rgba(0,212,255,0.12);
+}
+
+.stat-box h3{
+    font-size:36px;
+    color:#00d4ff;
+    margin-bottom:8px;
+}
+
+.stat-box p{
+    color:#aaa;
+    font-size:14px;
+}
+
+
+/* =====================================================
+   VALUES
+===================================================== */
+
+.value-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:25px;
+}
+
+.value-card{
+    padding:35px;
+    min-height:230px;
+    border-radius:24px;
+    background:rgba(255,255,255,0.05);
+    border:1px solid rgba(255,255,255,0.1);
+    -webkit-backdrop-filter:blur(20px);
+    backdrop-filter:blur(20px);
+    transition:0.4s;
+}
+
+.value-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 20px 50px rgba(0,212,255,0.15);
+}
+
+.icon{
+    width:55px;
+    height:55px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-radius:16px;
+    background:linear-gradient(135deg,#00d4ff,#7c3aed);
+    font-size:25px;
+    margin-bottom:22px;
+}
+
+.value-card h3{
+    font-size:22px;
+    margin-bottom:12px;
+}
+
+.value-card p{
+    color:#aaa;
+    line-height:1.7;
+    font-size:14px;
+}
+
+
+/* =====================================================
+   OFFER
+===================================================== */
+
+.offer-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:20px;
+}
+
+.offer-box{
+    padding:30px;
+    border-radius:22px;
+    background:rgba(255,255,255,0.05);
+    border:1px solid rgba(255,255,255,0.1);
+    transition:0.35s;
+}
+
+.offer-box:hover{
+    transform:translateY(-5px);
+    background:rgba(255,255,255,0.07);
+}
+
+.offer-box h3{
+    color:#00d4ff;
+    font-size:21px;
+    margin-bottom:10px;
+}
+
+.offer-box p{
+    color:#aaa;
+    line-height:1.7;
+    font-size:14px;
+}
+
+
+/* =====================================================
+   WHY M.TECH
+===================================================== */
+
+.why-section{
+    padding:70px 6%;
+    border-radius:35px;
+
+    background:linear-gradient(
+        135deg,
+        rgba(0,212,255,0.08),
+        rgba(124,58,237,0.08)
+    );
+
+    border:1px solid rgba(255,255,255,0.1);
+}
+
+.why-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:22px;
+}
+
+.why-item{
+    display:flex;
+    gap:18px;
+    align-items:flex-start;
+    padding:22px;
+    border-radius:18px;
+    background:rgba(255,255,255,0.04);
+}
+
+.check{
+    min-width:32px;
+    height:32px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-radius:50%;
+    background:#00d4ff;
+    color:#000;
+    font-weight:bold;
+}
+
+.why-item h3{
+    margin-bottom:7px;
+    font-size:18px;
+}
+
+.why-item p{
+    color:#aaa;
+    line-height:1.6;
+    font-size:14px;
+}
+
+
+/* =====================================================
+   CTA
+===================================================== */
+
+.cta{
+    width:90%;
+    max-width:1200px;
+    margin:0 auto 110px;
+    padding:75px 30px;
+    border-radius:35px;
+    background:linear-gradient(135deg,#00d4ff,#7c3aed);
+    text-align:center;
+    position:relative;
+    overflow:hidden;
+}
+
+.cta h2{
+    font-size:45px;
+    margin-bottom:15px;
+    overflow-wrap:break-word;
+}
+
+.cta p{
+    max-width:650px;
+    margin:0 auto 28px;
+    line-height:1.7;
+}
+
+.cta .cta-btn{
+    display:inline-block;
+    padding:14px 30px;
+    border:none;
+    border-radius:30px;
+    background:white;
+    color:#111;
+    font-weight:bold;
+    cursor:pointer;
+    text-decoration:none;
+    transition:0.3s;
+}
+
+.cta .cta-btn:hover{
+    transform:translateY(-3px) scale(1.03);
+}
+
+
+/* =====================================================
+   FOOTER (UNIFIED ACROSS ALL PAGES)
+===================================================== */
+
+.site-footer{
+    background:linear-gradient(135deg,#070b18,#0c1224);
+    border-top:1px solid rgba(255,255,255,.10);
+    padding-top:60px;
+    color:white;
+}
+
+.footer-container{
+    width:92%;
+    max-width:1200px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:1.2fr 1fr 1fr;
+    gap:50px;
+    padding-bottom:50px;
+}
+
+.footer-brand h2{
+    font-size:25px;
+    margin-bottom:10px;
+    background:linear-gradient(90deg,#ffffff,#00d4ff);
+    -webkit-background-clip:text;
+    background-clip:text;
+    -webkit-text-fill-color:transparent;
+    color:transparent;
+}
+
+.footer-brand>p{
+    color:#9ca7b8;
+    font-size:14px;
+    line-height:1.7;
+}
+
+.footer-brands{
+    display:flex;
+    flex-wrap:wrap;
+    gap:8px;
+    margin-top:22px;
+}
+
+.footer-brands span{
+    padding:7px 12px;
+    border-radius:8px;
+    font-size:11px;
+    color:#cdd5e1;
+    background:rgba(255,255,255,.05);
+    border:1px solid rgba(255,255,255,.08);
+    transition:.3s;
+}
+
+.footer-brands span:hover{
+    color:#00d4ff;
+    border-color:#00d4ff;
+    transform:translateY(-2px);
+}
+
+.footer-column{
+    display:flex;
+    flex-direction:column;
+    gap:12px;
+}
+
+.footer-column h3{
+    font-size:18px;
+    margin-bottom:8px;
+    color:#fff;
+}
+
+.footer-column a{
+    color:#9ca7b8;
+    text-decoration:none;
+    font-size:13px;
+    line-height:1.7;
+    transition:.3s;
+    overflow-wrap:anywhere;
+}
+
+.footer-column a:hover{
+    color:#00d4ff;
+}
+
+.footer-column p{
+    color:#9ca7b8;
+    font-size:13px;
+    line-height:1.9;
+    margin:0 0 4px;
+    overflow-wrap:anywhere;
+}
+
+.footer-map{
+    display:inline-block;
+    color:#00d4ff!important;
+    margin-top:5px;
+    text-decoration:none;
+}
+
+.footer-bottom{
+    border-top:1px solid rgba(255,255,255,.08);
+    width:92%;
+    max-width:1200px;
+    margin:auto;
+    padding:25px 0;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.footer-bottom p{
+    color:#737d8e;
+    font-size:11px;
+    margin:0;
+}
+
+.footer-bottom a{
+    color:#737d8e;
+    text-decoration:none;
+}
+
+.footer-bottom a:hover{
+    color:#00d4ff;
+}
+
+.footer-bottom strong{
+    color:#00d4ff;
+}
+
+@media(max-width:850px){
+
+    .footer-container{
+        grid-template-columns:1fr 1fr;
+        gap:35px;
+    }
+
+    .footer-brand{
+        grid-column:1 / -1;
+    }
+
+    .footer-bottom{
+        flex-direction:column;
+        text-align:center;
+    }
+}
+
+@media(max-width:600px){
+
+    .site-footer{
+        padding-top:45px;
+    }
+
+    .footer-container{
+        grid-template-columns:1fr;
+        gap:30px;
+    }
+
+    .footer-brand{
+        grid-column:auto;
+    }
+
+    .footer-brand h2{
+        font-size:22px;
+    }
+
+    .footer-bottom{
+        padding:20px 0;
+    }
+}
+
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media(max-width:900px){
+
+    .hero h1{
+        font-size:55px;
+    }
+
+    .story-grid{
+        grid-template-columns:1fr;
+    }
+
+    .stats{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .value-grid{
+        grid-template-columns:1fr;
+    }
+
+    .offer-grid{
+        grid-template-columns:1fr;
+    }
+
+    .why-grid{
+        grid-template-columns:1fr;
+    }
+}
+
+@media(max-width:768px){
+
+    .hero{
+        min-height:auto;
+        padding:75px 6% 70px;
+    }
+
+    .hero h1{
+        font-size:43px;
+    }
+
+    .hero p{
+        font-size:15px;
+    }
+
+    .section{
+        width:90%;
+        margin-bottom:80px;
+    }
+
+    .section-heading{
+        margin-bottom:35px;
+    }
+
+    .section-heading h2{
+        font-size:32px;
+    }
+
+    .story-card{
+        min-height:auto;
+        padding:30px;
+    }
+
+    .story-card h3,
+    .story-text h3{
+        font-size:27px;
+    }
+
+    .stats{
+        width:90%;
+        margin-bottom:80px;
+        grid-template-columns:1fr 1fr;
+        gap:14px;
+    }
+
+    .stat-box{
+        padding:25px 12px;
+    }
+
+    .stat-box h3{
+        font-size:29px;
+    }
+
+    .why-section{
+        padding:40px 20px;
+    }
+
+    .cta{
+        margin-bottom:80px;
+        padding:55px 20px;
+    }
+
+    .cta h2{
+        font-size:32px;
+    }
+}
+
+@media(max-width:430px){
+
+    .hero h1{
+        font-size:38px;
+    }
+
+    .stats{
+        grid-template-columns:1fr;
+    }
+}
+
+
+/* ===== VERY SMALL PHONES (320-360px safety) ===== */
+
+@media(max-width:360px){
+
+    .hero h1{
+        font-size:33px;
+    }
+
+    .eyebrow{
+        font-size:11px;
+        letter-spacing:1px;
+        padding:8px 14px;
+    }
+
+    .section-heading h2{
+        font-size:28px;
+    }
+
+    .story-card{
+        padding:24px;
+    }
+
+    .story-card h3,
+    .story-text h3{
+        font-size:24px;
+    }
+
+    .story-card::before{
+        font-size:240px;
+    }
+
+    .value-card,
+    .offer-box{
+        padding:24px;
+    }
+
+    .why-section{
+        padding:32px 16px;
+    }
+
+    .why-item{
+        padding:18px;
+        gap:14px;
+    }
+
+    .cta{
+        padding:45px 16px;
+    }
+
+    .cta h2{
+        font-size:27px;
+    }
+}
+
+
+/* =====================================================
+   MOBILE HEADER / HAMBURGER MENU
+===================================================== */
+
+.menu-toggle{
+    display:none;
+    flex-direction:column;
+    justify-content:space-between;
+    width:26px;
+    height:19px;
+    background:none;
+    border:none;
+    cursor:pointer;
+    padding:0;
+    z-index:1200;
+}
+
+.menu-toggle span{
+    display:block;
+    width:100%;
+    height:3px;
+    border-radius:3px;
+    background:#ffffff;
+    transition:.3s ease;
+}
+
+.menu-toggle.active span:nth-child(1){
+    transform:translateY(8px) rotate(45deg);
+}
+
+.menu-toggle.active span:nth-child(2){
+    opacity:0;
+}
+
+.menu-toggle.active span:nth-child(3){
+    transform:translateY(-8px) rotate(-45deg);
+}
+
+@media(max-width:768px){
+
+    header{
+        flex-direction:row;
+        justify-content:space-between;
+        align-items:center;
+        padding:18px 6%;
+        position:sticky;
+    }
+
+    .menu-toggle{
+        display:flex;
+    }
+
+    nav{
+        position:absolute;
+        top:100%;
+        left:0;
+        width:100%;
+        flex-direction:column;
+        align-items:stretch;
+        gap:0;
+        background:rgba(5,8,22,.98);
+        -webkit-backdrop-filter:blur(20px);
+        backdrop-filter:blur(20px);
+        border-bottom:1px solid rgba(255,255,255,.1);
+        max-height:0;
+        overflow:hidden;
+        visibility:hidden;
+        transition:max-height .35s ease, visibility .35s ease;
+    }
+
+    nav.open{
+        max-height:420px;
+        visibility:visible;
+    }
+
+    nav a{
+        padding:16px 0;
+        width:100%;
+        text-align:center;
+        font-size:15px;
+        border-top:1px solid rgba(255,255,255,.06);
+    }
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+<a class="skip-link" href="#main">Skip to main content</a>
+
+
+<!-- =====================================================
+     HEADER
+===================================================== -->
+
+<header>
+
+    <a class="brand" href="index.html" aria-label="M.Tech Ahmedabad - Home">
+        <img class="brand-logo" src="logoo.png" alt="M.Tech Ahmedabad" width="100">
+        <span class="brand-text">M<span>.Tech</span></span>
+    </a>
+
+    <button class="menu-toggle" id="menuToggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mainNav">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+    <nav id="mainNav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
+        <a href="about.html" aria-current="page">About</a>
+    </nav>
+
+</header>
+
+
+<main id="main">
+
+
+<!-- =====================================================
+     HERO
+===================================================== -->
+
+<section class="hero">
+
+    <div class="hero-content">
+
+        <div class="eyebrow">ABOUT M.TECH</div>
+
+        <h1>Technology That Moves You Forward</h1>
+
+        <p>
+            Welcome to M.Tech &mdash; your trusted destination for premium
+            computers, laptops, security systems, printers and modern
+            technology solutions designed for everyday performance.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     OUR STORY
+===================================================== -->
+
+<section class="section">
+
+    <div class="section-heading">
+
+        <div class="small-title">Our Story</div>
+
+        <h2>Built Around Technology</h2>
+
+        <p>
+            We believe the right technology should make work easier,
+            entertainment better and businesses more productive.
+        </p>
+
+    </div>
+
+
+    <div class="story-grid">
+
+        <div class="story-card">
+
+            <h3>M.Tech</h3>
+
+            <p>
+                M.Tech is a computer and technology store in Ahmedabad,
+                providing laptops, desktops, CCTV systems, printers,
+                accessories and technology solutions.
+            </p>
+
+            <p>
+                Our focus is simple &mdash; bring together reliable products,
+                useful technology and dependable support in one place.
+            </p>
+
+        </div>
+
+
+        <div class="story-text">
+
+            <h3>Technology Made Simple.</h3>
+
+            <p>
+                Choosing technology can sometimes feel complicated.
+                That is why M.Tech focuses on keeping the experience
+                simple, clear and customer-friendly.
+            </p>
+
+            <p>
+                Whether you are a student looking for a laptop, a gamer
+                building a powerful setup, a professional upgrading a
+                workstation or a business looking for security and
+                networking solutions, we are here to help.
+            </p>
+
+            <p>
+                From <span class="highlight">performance</span> to
+                <span class="highlight">reliability</span>, every part
+                of the M.Tech experience is designed with practical
+                technology needs in mind.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     STATS
+===================================================== -->
+
+<h2 class="sr-only">M.Tech at a glance</h2>
+
+<div class="stats">
+
+    <div class="stat-box">
+        <h3>12+</h3>
+        <p>Featured Products</p>
+    </div>
+
+    <div class="stat-box">
+        <h3>6</h3>
+        <p>Technology Categories</p>
+    </div>
+
+    <div class="stat-box">
+        <h3>9</h3>
+        <p>Core Services</p>
+    </div>
+
+    <div class="stat-box">
+        <h3>2026</h3>
+        <p>Growing With Technology</p>
+    </div>
+
+</div>
+
+
+<!-- =====================================================
+     OUR VALUES
+===================================================== -->
+
+<section class="section">
+
+    <div class="section-heading">
+
+        <div class="small-title">What We Believe</div>
+
+        <h2>Our Core Values</h2>
+
+        <p>
+            The principles behind the way we choose products,
+            provide services and build customer relationships.
+        </p>
+
+    </div>
+
+
+    <div class="value-grid">
+
+        <div class="value-card">
+
+            <div class="icon" aria-hidden="true">&#9889;</div>
+
+            <h3>Performance</h3>
+
+            <p>
+                We focus on technology that delivers smooth,
+                efficient and dependable performance for real-world use.
+            </p>
+
+        </div>
+
+
+        <div class="value-card">
+
+            <div class="icon" aria-hidden="true">&#9670;</div>
+
+            <h3>Quality</h3>
+
+            <p>
+                We believe reliable technology creates better
+                long-term experiences for homes, students and businesses.
+            </p>
+
+        </div>
+
+
+        <div class="value-card">
+
+            <div class="icon" aria-hidden="true">&#10003;</div>
+
+            <h3>Trust</h3>
+
+            <p>
+                Clear information, helpful support and a customer-first
+                approach are at the heart of M.Tech.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     WHAT WE OFFER
+===================================================== -->
+
+<section class="section">
+
+    <div class="section-heading">
+
+        <div class="small-title">What We Offer</div>
+
+        <h2>Everything For Your Setup</h2>
+
+        <p>
+            From everyday computing to complete technology solutions,
+            M.Tech brings essential products and services together.
+        </p>
+
+    </div>
+
+
+    <div class="offer-grid">
+
+        <div class="offer-box">
+            <h3>Laptops &amp; Desktops</h3>
+            <p>
+                Reliable computing solutions for students,
+                professionals, offices, creators and gaming enthusiasts.
+            </p>
+        </div>
+
+        <div class="offer-box">
+            <h3>CCTV &amp; Security</h3>
+            <p>
+                CCTV systems and security solutions for homes,
+                shops, offices and business environments.
+            </p>
+        </div>
+
+        <div class="offer-box">
+            <h3>Printers</h3>
+            <p>
+                Practical printing solutions for documents,
+                colour printing, offices and everyday requirements.
+            </p>
+        </div>
+
+        <div class="offer-box">
+            <h3>Accessories</h3>
+            <p>
+                Useful computer accessories including keyboards,
+                mice, headsets and other essential peripherals.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     WHY M.TECH
+===================================================== -->
+
+<section class="section">
+
+    <div class="why-section">
+
+        <div class="section-heading">
+
+            <div class="small-title">Why M.Tech</div>
+
+            <h2>More Than Just Technology</h2>
+
+            <p>
+                We aim to make every technology decision easier,
+                smarter and more comfortable for our customers.
+            </p>
+
+        </div>
+
+
+        <div class="why-grid">
+
+            <div class="why-item">
+
+                <div class="check" aria-hidden="true">&#10003;</div>
+
+                <div>
+                    <h3>Wide Technology Range</h3>
+                    <p>
+                        Computers, laptops, CCTV, printers and
+                        accessories in one convenient destination.
+                    </p>
+                </div>
+
+            </div>
+
+
+            <div class="why-item">
+
+                <div class="check" aria-hidden="true">&#10003;</div>
+
+                <div>
+                    <h3>Customer Focused</h3>
+                    <p>
+                        We keep technology recommendations simple,
+                        practical and easy to understand.
+                    </p>
+                </div>
+
+            </div>
+
+
+            <div class="why-item">
+
+                <div class="check" aria-hidden="true">&#10003;</div>
+
+                <div>
+                    <h3>Complete Solutions</h3>
+                    <p>
+                        Product selection and technology services
+                        designed for different needs.
+                    </p>
+                </div>
+
+            </div>
+
+
+            <div class="why-item">
+
+                <div class="check" aria-hidden="true">&#10003;</div>
+
+                <div>
+                    <h3>Reliable Support</h3>
+                    <p>
+                        Computer repair, CCTV installation,
+                        networking and printer support.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     CTA
+===================================================== -->
+
+<section class="cta">
+
+    <div class="cta-content">
+
+        <h2>Ready To Upgrade Your Technology?</h2>
+
+        <p>
+            Explore our products and discover the right technology
+            for your home, work, business or entertainment setup.
+        </p>
+
+        <a class="cta-btn" href="products.html">Explore Products</a>
+
+    </div>
+
+</section>
+
+</main>
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer class="site-footer">
+
+<div class="footer-container">
+
+<div class="footer-brand">
+
+<h2>M.Tech Ahmedabad</h2>
+
+<p>
+Laptops, desktops, CCTV, printers, networking and
+accessories with reliable technical support in Ahmedabad.
+</p>
+
+<div class="footer-brands">
+<span>Laptops</span>
+<span>Desktops</span>
+<span>CCTV</span>
+<span>Printers</span>
+<span>Networking</span>
+<span>Accessories</span>
+</div>
+
+</div>
+
+<div class="footer-column">
+
+<h3>Quick Links</h3>
+
+<a href="index.html">Home</a>
+<a href="products.html">Products</a>
+<a href="services.html">Services</a>
+<a href="contact.html">Contact</a>
+<a href="about.html">About</a>
+
+</div>
+
+<div class="footer-column">
+
+<h3>Contact</h3>
+
+<!-- TODO: add the full street address + PIN code here once confirmed. -->
+
+<a href="tel:+917383037521">&#128222; +91 73830 37521</a>
+<a href="mailto:info@mtechahmedabad.com">&#9993;&#65039; info@mtechahmedabad.com</a>
+<a href="https://wa.me/917383037521" target="_blank" rel="noopener noreferrer">&#128172; WhatsApp</a>
+<a href="https://instagram.com/mtechahmedabad" target="_blank" rel="noopener noreferrer">&#128247; Instagram</a>
+
+<a class="footer-map" href="https://maps.app.goo.gl/6pT45zfBXSbPrRMz9" target="_blank" rel="noopener noreferrer">
+&#128205; Get Directions
+</a>
+
+</div>
+
+</div>
+
+<div class="footer-bottom">
+
+<p>&copy; 2026 <strong>M.Tech</strong> Ahmedabad Computer Store</p>
+
+<p>
+<a href="tel:+917383037521">&#128222; +91 73830 37521</a>
+&nbsp;|&nbsp;
+<a href="mailto:info@mtechahmedabad.com">&#9993;&#65039; info@mtechahmedabad.com</a>
+</p>
+
+</div>
+
+</footer>
+
+
+<!-- ===================== SCRIPTS ===================== -->
+
+<script src="assets/menu.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,1198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<!-- ===================== BASICS ===================== -->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- ===================== SECURITY ===================== -->
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' https: data:; connect-src 'none'; form-action 'none'; base-uri 'none'; object-src 'none'; frame-src 'none'; upgrade-insecure-requests">
+<!-- NOTE: frame-ancestors / X-Frame-Options cannot be set from a meta tag.
+     They are in .htaccess / _headers / vercel.json - upload those to your host. -->
+
+<!-- ===================== SEO ===================== -->
+<title>M.Tech Ahmedabad | Laptops, Desktops, CCTV &amp; Printers</title>
+
+<meta name="description" content="M.Tech Ahmedabad Computer Store - laptops, desktops, gaming PCs, CCTV, printers, networking and accessories, with repair and technical support in Ahmedabad.">
+
+<link rel="canonical" href="https://www.mtechahmedabad.com/">
+
+<meta name="theme-color" content="#050816">
+<meta name="robots" content="index, follow">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="M.Tech Ahmedabad">
+<meta property="og:title" content="M.Tech Ahmedabad | Laptops, Desktops, CCTV &amp; Printers">
+<meta property="og:description" content="Laptops, desktops, gaming PCs, CCTV, printers, networking and accessories with reliable technical support in Ahmedabad.">
+<meta property="og:url" content="https://www.mtechahmedabad.com/">
+<meta property="og:image" content="https://www.mtechahmedabad.com/logoo.png">
+<meta name="twitter:card" content="summary">
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23050816'/%3E%3Ctext x='16' y='23' font-family='Arial,Helvetica,sans-serif' font-size='19' font-weight='bold' fill='%2300d4ff' text-anchor='middle'%3EM%3C/text%3E%3C/svg%3E">
+
+<!-- ===================== FONTS ===================== -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+/* =====================================================
+   GLOBAL
+===================================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#050816;
+    color:white;
+    overflow-x:hidden;
+}
+
+img{
+    max-width:100%;
+}
+
+
+/* =====================================================
+   ACCESSIBILITY HELPERS
+===================================================== */
+
+.skip-link{
+    position:absolute;
+    left:-9999px;
+    top:0;
+    z-index:2000;
+    padding:12px 18px;
+    border-radius:0 0 10px 0;
+    background:#00d4ff;
+    color:#050816;
+    font-weight:700;
+    text-decoration:none;
+}
+
+.skip-link:focus{
+    left:0;
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible{
+    outline:3px solid #00d4ff;
+    outline-offset:3px;
+    border-radius:6px;
+}
+
+.sr-only{
+    position:absolute;
+    width:1px;
+    height:1px;
+    padding:0;
+    margin:-1px;
+    overflow:hidden;
+    clip:rect(0,0,0,0);
+    white-space:nowrap;
+    border:0;
+}
+
+@media(prefers-reduced-motion:reduce){
+
+    html{
+        scroll-behavior:auto;
+    }
+
+    *,
+    *::before,
+    *::after{
+        animation-duration:.001ms!important;
+        animation-iteration-count:1!important;
+        transition-duration:.001ms!important;
+        scroll-behavior:auto!important;
+    }
+}
+
+
+/* =====================================================
+   BACKGROUND GLOW
+===================================================== */
+
+body::before{
+    content:'';
+    position:fixed;
+    top:-250px;
+    left:-250px;
+    width:600px;
+    height:600px;
+    background:#00d4ff25;
+    filter:blur(200px);
+    z-index:-1;
+    pointer-events:none;
+}
+
+body::after{
+    content:'';
+    position:fixed;
+    right:-250px;
+    bottom:-250px;
+    width:600px;
+    height:600px;
+    background:#7c3aed25;
+    filter:blur(200px);
+    z-index:-1;
+    pointer-events:none;
+}
+
+
+/* =====================================================
+   HEADER
+===================================================== */
+
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:22px 8%;
+    background:rgba(255,255,255,0.05);
+    -webkit-backdrop-filter:blur(20px);
+    backdrop-filter:blur(20px);
+    border-bottom:1px solid rgba(255,255,255,0.1);
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+.brand{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    flex-shrink:0;
+    color:white;
+    text-decoration:none;
+}
+
+.brand-logo{
+    display:block;
+    width:100px;
+    height:auto;
+    max-width:40vw;
+}
+
+.brand-text{
+    display:none;
+    font-size:26px;
+    font-weight:700;
+    color:white;
+    white-space:nowrap;
+}
+
+.brand-text span{
+    color:#00d4ff;
+}
+
+html.no-logo .brand-logo{
+    display:none;
+}
+
+html.no-logo .brand-text{
+    display:inline-block;
+}
+
+nav{
+    display:flex;
+    gap:25px;
+}
+
+nav a{
+    color:#ddd;
+    text-decoration:none;
+    font-weight:500;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:#00d4ff;
+}
+
+nav a[aria-current="page"]{
+    color:#00d4ff;
+}
+
+
+/* =====================================================
+   HERO
+===================================================== */
+
+.hero{
+    padding:140px 20px;
+    text-align:center;
+
+    background:
+    linear-gradient(
+        rgba(5,8,22,.70),
+        rgba(5,8,22,.75)
+    ),
+    url('https://images.unsplash.com/photo-1518770660439-4636190af475?w=1800');
+
+    background-size:cover;
+    background-position:center;
+}
+
+.hero h1{
+    font-size:72px;
+    font-weight:700;
+    line-height:1.1;
+    overflow-wrap:break-word;
+
+    background:
+    linear-gradient(
+        90deg,
+        #ffffff,
+        #00d4ff
+    );
+
+    -webkit-background-clip:text;
+    background-clip:text;
+    -webkit-text-fill-color:transparent;
+    color:transparent;
+}
+
+.hero p{
+    margin-top:20px;
+    font-size:20px;
+    color:#bdbdbd;
+}
+
+.hero .hero-btn{
+    display:inline-block;
+    margin-top:35px;
+    padding:15px 35px;
+    border:none;
+    border-radius:50px;
+    cursor:pointer;
+    font-size:16px;
+    font-weight:600;
+    color:white;
+    text-decoration:none;
+
+    background:
+    linear-gradient(
+        135deg,
+        #00d4ff,
+        #7c3aed
+    );
+
+    transition:.3s;
+}
+
+.hero .hero-btn:hover{
+    transform:translateY(-4px);
+
+    box-shadow:
+    0 15px 40px
+    rgba(0,212,255,.30);
+}
+
+
+/* =====================================================
+   CATEGORIES
+===================================================== */
+
+.categories{
+    padding:90px 5%;
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+    max-width:1400px;
+    margin:auto;
+}
+
+.category-link{
+    text-decoration:none;
+    color:white;
+    display:block;
+}
+
+.category{
+    width:100%;
+    height:360px;
+    padding:25px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+
+    background:rgba(255,255,255,.05);
+
+    -webkit-backdrop-filter:blur(20px);
+    backdrop-filter:blur(20px);
+
+    border:1px solid rgba(255,255,255,.08);
+    border-radius:20px;
+    transition:.4s;
+    overflow:hidden;
+}
+
+.category-link:hover .category,
+.category-link:focus-visible .category{
+    transform:translateY(-10px);
+
+    box-shadow:
+    0 20px 45px
+    rgba(0,212,255,.18);
+}
+
+.category img{
+    width:100%;
+    height:250px;
+    object-fit:contain;
+    display:block;
+    margin-bottom:20px;
+}
+
+.category h3{
+    font-size:20px;
+}
+
+
+/* =====================================================
+   FEATURED
+===================================================== */
+
+.featured{
+    padding:40px 5% 90px;
+    text-align:center;
+}
+
+.featured h2{
+    font-size:46px;
+    margin-bottom:50px;
+
+    background:
+    linear-gradient(
+        90deg,
+        #ffffff,
+        #00d4ff
+    );
+
+    -webkit-background-clip:text;
+    background-clip:text;
+    -webkit-text-fill-color:transparent;
+    color:transparent;
+}
+
+
+/* =====================================================
+   PRODUCTS GRID
+===================================================== */
+
+.products{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+    max-width:1400px;
+    margin:auto;
+}
+
+.product{
+    width:100%;
+    height:480px;
+    padding:25px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:flex-start;
+
+    background:rgba(255,255,255,.05);
+
+    -webkit-backdrop-filter:blur(20px);
+    backdrop-filter:blur(20px);
+
+    border:1px solid rgba(255,255,255,.08);
+    border-radius:20px;
+    transition:.4s;
+    overflow:hidden;
+}
+
+.product:hover,
+.product:focus-within{
+    transform:translateY(-10px);
+
+    box-shadow:
+    0 20px 50px
+    rgba(0,212,255,.20);
+}
+
+.product img{
+    width:100%;
+    height:280px;
+    object-fit:cover;
+    display:block;
+    margin-bottom:10px;
+    border-radius:15px;
+    transition:.4s;
+}
+
+.product:hover img{
+    transform:scale(1.03);
+}
+
+.product h3{
+    margin:15px 0;
+    font-size:22px;
+}
+
+.product p{
+    color:#bdbdbd;
+    font-size:14px;
+    margin-bottom:15px;
+}
+
+.product .product-btn{
+    margin-top:auto;
+    display:inline-block;
+    padding:12px 25px;
+    border:none;
+    border-radius:12px;
+    cursor:pointer;
+    font-weight:600;
+    color:white;
+    text-decoration:none;
+
+    background:
+    linear-gradient(
+        135deg,
+        #00d4ff,
+        #7c3aed
+    );
+
+    transition:.3s;
+}
+
+.product .product-btn:hover{
+    transform:scale(1.05);
+
+    box-shadow:
+    0 8px 25px
+    rgba(0,212,255,.25);
+}
+
+
+/* =====================================================
+   CTA BANNER
+===================================================== */
+
+.banner{
+    width:90%;
+    margin:auto;
+    margin-bottom:90px;
+    padding:70px 30px;
+    text-align:center;
+    border-radius:35px;
+
+    background:
+    linear-gradient(
+        135deg,
+        #00d4ff,
+        #7c3aed
+    );
+}
+
+.banner h2{
+    font-size:48px;
+    margin-bottom:15px;
+}
+
+.banner p{
+    margin-bottom:25px;
+    font-size:18px;
+}
+
+.banner .banner-btn{
+    display:inline-block;
+    padding:15px 35px;
+    border:none;
+    border-radius:40px;
+    font-weight:600;
+    cursor:pointer;
+    background:#ffffff;
+    color:#111827;
+    text-decoration:none;
+    transition:.3s;
+}
+
+.banner .banner-btn:hover{
+    transform:translateY(-3px);
+
+    box-shadow:
+    0 10px 30px
+    rgba(0,0,0,.25);
+}
+
+
+/* =====================================================
+   FOOTER (UNIFIED ACROSS ALL PAGES)
+===================================================== */
+
+.site-footer{
+    background:linear-gradient(135deg,#070b18,#0c1224);
+    border-top:1px solid rgba(255,255,255,.10);
+    padding-top:60px;
+    color:white;
+}
+
+.footer-container{
+    width:92%;
+    max-width:1200px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:1.2fr 1fr 1fr;
+    gap:50px;
+    padding-bottom:50px;
+}
+
+.footer-brand h2{
+    font-size:25px;
+    margin-bottom:10px;
+    background:linear-gradient(90deg,#ffffff,#00d4ff);
+    -webkit-background-clip:text;
+    background-clip:text;
+    -webkit-text-fill-color:transparent;
+    color:transparent;
+}
+
+.footer-brand>p{
+    color:#9ca7b8;
+    font-size:14px;
+    line-height:1.7;
+}
+
+.footer-brands{
+    display:flex;
+    flex-wrap:wrap;
+    gap:8px;
+    margin-top:22px;
+}
+
+.footer-brands span{
+    padding:7px 12px;
+    border-radius:8px;
+    font-size:11px;
+    color:#cdd5e1;
+    background:rgba(255,255,255,.05);
+    border:1px solid rgba(255,255,255,.08);
+    transition:.3s;
+}
+
+.footer-brands span:hover{
+    color:#00d4ff;
+    border-color:#00d4ff;
+    transform:translateY(-2px);
+}
+
+.footer-column{
+    display:flex;
+    flex-direction:column;
+    gap:12px;
+}
+
+.footer-column h3{
+    font-size:18px;
+    margin-bottom:8px;
+    color:#fff;
+}
+
+.footer-column a{
+    color:#9ca7b8;
+    text-decoration:none;
+    font-size:13px;
+    line-height:1.7;
+    transition:.3s;
+    overflow-wrap:anywhere;
+}
+
+.footer-column a:hover{
+    color:#00d4ff;
+}
+
+.footer-column p{
+    color:#9ca7b8;
+    font-size:13px;
+    line-height:1.9;
+    margin:0 0 4px;
+    overflow-wrap:anywhere;
+}
+
+.footer-map{
+    display:inline-block;
+    color:#00d4ff!important;
+    margin-top:5px;
+    text-decoration:none;
+}
+
+.footer-bottom{
+    border-top:1px solid rgba(255,255,255,.08);
+    width:92%;
+    max-width:1200px;
+    margin:auto;
+    padding:25px 0;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.footer-bottom p{
+    color:#737d8e;
+    font-size:11px;
+    margin:0;
+}
+
+.footer-bottom a{
+    color:#737d8e;
+    text-decoration:none;
+}
+
+.footer-bottom a:hover{
+    color:#00d4ff;
+}
+
+.footer-bottom strong{
+    color:#00d4ff;
+}
+
+@media(max-width:850px){
+
+    .footer-container{
+        grid-template-columns:1fr 1fr;
+        gap:35px;
+    }
+
+    .footer-brand{
+        grid-column:1 / -1;
+    }
+
+    .footer-bottom{
+        flex-direction:column;
+        text-align:center;
+    }
+}
+
+@media(max-width:600px){
+
+    .site-footer{
+        padding-top:45px;
+    }
+
+    .footer-container{
+        grid-template-columns:1fr;
+        gap:30px;
+    }
+
+    .footer-brand{
+        grid-column:auto;
+    }
+
+    .footer-brand h2{
+        font-size:22px;
+    }
+
+    .footer-bottom{
+        padding:20px 0;
+    }
+}
+
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media(max-width:900px){
+
+    .categories,
+    .products{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .hero h1{
+        font-size:55px;
+    }
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media(max-width:600px){
+
+    .hero{
+        padding:100px 20px;
+    }
+
+    .hero h1{
+        font-size:42px;
+    }
+
+    .hero p{
+        font-size:16px;
+    }
+
+    .categories,
+    .products{
+        grid-template-columns:1fr;
+    }
+
+    .category{
+        height:330px;
+    }
+
+    .category img{
+        width:100%;
+        height:230px;
+    }
+
+    .product{
+        height:450px;
+    }
+
+    .product img{
+        width:100%;
+        height:250px;
+    }
+
+    .featured h2{
+        font-size:36px;
+    }
+
+    .banner{
+        padding:45px 25px;
+    }
+
+    .banner h2{
+        font-size:32px;
+    }
+}
+
+
+/* ===== VERY SMALL PHONES (320-360px safety) ===== */
+
+@media(max-width:360px){
+
+    .hero h1{
+        font-size:34px;
+    }
+
+    .featured h2{
+        font-size:30px;
+    }
+
+    .banner h2{
+        font-size:27px;
+    }
+
+    .banner{
+        padding:40px 18px;
+    }
+
+    .categories{
+        padding:60px 5%;
+    }
+}
+
+
+/* =====================================================
+   MOBILE HEADER / HAMBURGER MENU
+===================================================== */
+
+.menu-toggle{
+    display:none;
+    flex-direction:column;
+    justify-content:space-between;
+    width:26px;
+    height:19px;
+    background:none;
+    border:none;
+    cursor:pointer;
+    padding:0;
+    z-index:1200;
+}
+
+.menu-toggle span{
+    display:block;
+    width:100%;
+    height:3px;
+    border-radius:3px;
+    background:#ffffff;
+    transition:.3s ease;
+}
+
+.menu-toggle.active span:nth-child(1){
+    transform:translateY(8px) rotate(45deg);
+}
+
+.menu-toggle.active span:nth-child(2){
+    opacity:0;
+}
+
+.menu-toggle.active span:nth-child(3){
+    transform:translateY(-8px) rotate(-45deg);
+}
+
+@media(max-width:768px){
+
+    header{
+        flex-direction:row;
+        justify-content:space-between;
+        align-items:center;
+        padding:18px 6%;
+        position:sticky;
+    }
+
+    .menu-toggle{
+        display:flex;
+    }
+
+    nav{
+        position:absolute;
+        top:100%;
+        left:0;
+        width:100%;
+        flex-direction:column;
+        align-items:stretch;
+        gap:0;
+        background:rgba(5,8,22,.98);
+        -webkit-backdrop-filter:blur(20px);
+        backdrop-filter:blur(20px);
+        border-bottom:1px solid rgba(255,255,255,.1);
+        max-height:0;
+        overflow:hidden;
+        visibility:hidden;
+        transition:max-height .35s ease, visibility .35s ease;
+    }
+
+    nav.open{
+        max-height:420px;
+        visibility:visible;
+    }
+
+    nav a{
+        padding:16px 0;
+        width:100%;
+        text-align:center;
+        font-size:15px;
+        border-top:1px solid rgba(255,255,255,.06);
+    }
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+<a class="skip-link" href="#main">Skip to main content</a>
+
+
+<!-- =====================================================
+     HEADER
+===================================================== -->
+
+<header>
+
+    <a class="brand" href="index.html" aria-label="M.Tech Ahmedabad - Home">
+        <img class="brand-logo" src="logoo.png" alt="M.Tech Ahmedabad" width="100">
+        <span class="brand-text">M<span>.Tech</span></span>
+    </a>
+
+    <button class="menu-toggle" id="menuToggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mainNav">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+    <nav id="mainNav" aria-label="Main navigation">
+        <a href="index.html" aria-current="page">Home</a>
+        <a href="products.html">Products</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
+        <a href="about.html">About</a>
+    </nav>
+
+</header>
+
+
+<main id="main">
+
+
+<!-- =====================================================
+     HERO
+===================================================== -->
+
+<section class="hero">
+
+    <h1>Ahmedabad's Trusted Tech Store</h1>
+
+    <p>Laptops &bull; Desktops &bull; CCTV &bull; Printers &bull; Accessories</p>
+
+    <a class="hero-btn" href="products.html">Explore Products</a>
+
+</section>
+
+
+<!-- =====================================================
+     CATEGORIES
+===================================================== -->
+
+<h2 class="sr-only">Shop by category</h2>
+
+<section class="categories" aria-label="Product categories">
+
+    <a href="products.html?category=laptop" class="category-link">
+        <div class="category">
+            <img src="https://cdn.mos.cms.futurecdn.net/xPYW4a73GxGBApFQeECW2h.jpg" alt="Laptops" loading="lazy">
+            <h3>Laptops</h3>
+        </div>
+    </a>
+
+    <a href="products.html?category=desktop" class="category-link">
+        <div class="category">
+            <img src="https://technoish.com/wp-content/uploads/2024/01/webimage-82CCC4B7-648B-4640-B40012823F3CCA4F.png" alt="Desktop computers" loading="lazy">
+            <h3>Desktops</h3>
+        </div>
+    </a>
+
+    <a href="products.html?category=laptop&amp;q=gaming" class="category-link">
+        <div class="category">
+            <img src="https://cdn.mos.cms.futurecdn.net/3kcgKLkfPRbskpsYzW239d.jpg" alt="Gaming laptops" loading="lazy">
+            <h3>Gaming Laptops</h3>
+        </div>
+    </a>
+
+    <a href="products.html?category=accessory" class="category-link">
+        <div class="category">
+            <img src="https://20countries.com/wp-content/uploads/Start-a-laptop-accessories-brand.jpg" alt="Computer accessories" loading="lazy">
+            <h3>Accessories</h3>
+        </div>
+    </a>
+
+    <a href="products.html?category=printer" class="category-link">
+        <div class="category">
+            <img src="https://png.pngtree.com/background/20230610/original/pngtree-printer-with-other-papers-on-it-picture-image_3022372.jpg" alt="Printers" loading="lazy">
+            <h3>Printers</h3>
+        </div>
+    </a>
+
+    <a href="products.html?category=cctv" class="category-link">
+        <div class="category">
+            <img src="https://static.vecteezy.com/system/resources/thumbnails/023/537/924/small_2x/security-camera-on-advanced-building-able-understanding-cameras-creative-resource-ai-generated-photo.jpeg" alt="CCTV security cameras" loading="lazy">
+            <h3>CCTV</h3>
+        </div>
+    </a>
+
+</section>
+
+
+<!-- =====================================================
+     FEATURED PRODUCTS
+===================================================== -->
+
+<section class="featured" id="featured">
+
+    <h2>Featured Products</h2>
+
+    <div class="products">
+
+        <div class="product">
+            <img src="https://images.unsplash.com/photo-1593642702821-c8da6771f0c6?w=900" alt="Gaming laptop" loading="lazy">
+            <h3>Gaming Laptop</h3>
+            <p>Powerful graphics and speed for gamers.</p>
+            <a class="product-btn" href="products.html?category=laptop&amp;q=gaming">View Options</a>
+        </div>
+
+        <div class="product">
+            <img src="https://images.unsplash.com/photo-1547082299-de196ea013d6?w=900" alt="Office desktop computer" loading="lazy">
+            <h3>Office Desktop</h3>
+            <p>Reliable performance for professionals.</p>
+            <a class="product-btn" href="products.html?category=desktop">View Options</a>
+        </div>
+
+        <div class="product">
+            <img src="https://images.unsplash.com/photo-1558008258-3256797b43f3?w=900" alt="CCTV camera kit" loading="lazy">
+            <h3>CCTV Kit</h3>
+            <p>Secure your home &amp; office.</p>
+            <a class="product-btn" href="products.html?category=cctv">View Options</a>
+        </div>
+
+        <div class="product">
+            <img src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=900" alt="Business laptop" loading="lazy">
+            <h3>Business Laptop</h3>
+            <p>Professional performance for everyday work.</p>
+            <a class="product-btn" href="products.html?category=laptop">View Options</a>
+        </div>
+
+        <div class="product">
+            <img src="https://images.unsplash.com/photo-1587202372634-32705e3bf49c?w=900" alt="Gaming PC" loading="lazy">
+            <h3>Gaming PC</h3>
+            <p>High-performance PC for gaming and entertainment.</p>
+            <a class="product-btn" href="products.html?category=desktop&amp;q=gaming">View Options</a>
+        </div>
+
+        <div class="product">
+            <img src="https://images.unsplash.com/photo-1612815154858-60aa4c59eaa6?w=900" alt="Office printer" loading="lazy">
+            <h3>Printer</h3>
+            <p>Fast and reliable printing solution for your office.</p>
+            <a class="product-btn" href="products.html?category=printer">View Options</a>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     CTA BANNER
+===================================================== -->
+
+<section class="banner">
+
+    <h2>Build Your Dream Setup</h2>
+
+    <p>
+        From gaming PCs and laptops to CCTV and office solutions,
+        we have everything you need.
+    </p>
+
+    <a class="banner-btn" href="products.html">Explore Collection</a>
+
+</section>
+
+</main>
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer class="site-footer">
+
+<div class="footer-container">
+
+<div class="footer-brand">
+
+<h2>M.Tech Ahmedabad</h2>
+
+<p>
+Laptops, desktops, CCTV, printers, networking and
+accessories with reliable technical support in Ahmedabad.
+</p>
+
+<div class="footer-brands">
+<span>Laptops</span>
+<span>Desktops</span>
+<span>CCTV</span>
+<span>Printers</span>
+<span>Networking</span>
+<span>Accessories</span>
+</div>
+
+</div>
+
+<div class="footer-column">
+
+<h3>Quick Links</h3>
+
+<a href="index.html">Home</a>
+<a href="products.html">Products</a>
+<a href="services.html">Services</a>
+<a href="contact.html">Contact</a>
+<a href="about.html">About</a>
+
+</div>
+
+<div class="footer-column">
+
+<h3>Contact</h3>
+
+<!-- TODO: add the full street address + PIN code here once confirmed. -->
+
+<a href="tel:+917383037521">&#128222; +91 73830 37521</a>
+<a href="mailto:info@mtechahmedabad.com">&#9993;&#65039; info@mtechahmedabad.com</a>
+<a href="https://wa.me/917383037521" target="_blank" rel="noopener noreferrer">&#128172; WhatsApp</a>
+<a href="https://instagram.com/mtechahmedabad" target="_blank" rel="noopener noreferrer">&#128247; Instagram</a>
+
+<a class="footer-map" href="https://maps.app.goo.gl/6pT45zfBXSbPrRMz9" target="_blank" rel="noopener noreferrer">
+&#128205; Get Directions
+</a>
+
+</div>
+
+</div>
+
+<div class="footer-bottom">
+
+<p>&copy; 2026 <strong>M.Tech</strong> Ahmedabad Computer Store</p>
+
+<p>
+<a href="tel:+917383037521">&#128222; +91 73830 37521</a>
+&nbsp;|&nbsp;
+<a href="mailto:info@mtechahmedabad.com">&#9993;&#65039; info@mtechahmedabad.com</a>
+</p>
+
+</div>
+
+</footer>
+
+
+<!-- =====================================================
+     STRUCTURED DATA
+===================================================== -->
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ComputerStore",
+  "name": "M.Tech Ahmedabad Computer Store",
+  "url": "https://www.mtechahmedabad.com/",
+  "telephone": "+91-73830-37521",
+  "email": "info@mtechahmedabad.com",
+  "image": "https://www.mtechahmedabad.com/logoo.png",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Ahmedabad",
+    "addressRegion": "Gujarat",
+    "addressCountry": "IN"
+  },
+  "openingHoursSpecification": [{
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+    "opens": "10:30",
+    "closes": "20:00"
+  }],
+  "sameAs": ["https://instagram.com/mtechahmedabad"]
+}
+</script>
+
+
+<!-- ===================== SCRIPTS ===================== -->
+
+<script src="assets/menu.js"></script>
+
+</body>
+</html>

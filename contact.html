@@ -1,0 +1,1740 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<!-- ===================== BASICS ===================== -->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- ===================== SECURITY ===================== -->
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' https: data:; connect-src 'none'; form-action 'none'; base-uri 'none'; object-src 'none'; frame-src 'none'; upgrade-insecure-requests">
+
+<!-- ===================== SEO ===================== -->
+<title>Contact Us | M.Tech Ahmedabad</title>
+
+<meta name="description" content="Contact M.Tech Ahmedabad for laptops, desktops, CCTV, printers, networking solutions and accessories. Call, WhatsApp or email us.">
+
+<link rel="canonical" href="https://www.mtechahmedabad.com/contact.html">
+
+<meta name="theme-color" content="#050816">
+<meta name="robots" content="index, follow">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="M.Tech Ahmedabad">
+<meta property="og:title" content="Contact Us | M.Tech Ahmedabad">
+<meta property="og:description" content="Call, WhatsApp, email or visit M.Tech Ahmedabad for computers, CCTV, printers and technical support.">
+<meta property="og:url" content="https://www.mtechahmedabad.com/contact.html">
+<meta property="og:image" content="https://www.mtechahmedabad.com/logoo.png">
+<meta name="twitter:card" content="summary">
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23050816'/%3E%3Ctext x='16' y='23' font-family='Arial,Helvetica,sans-serif' font-size='19' font-weight='bold' fill='%2300d4ff' text-anchor='middle'%3EM%3C/text%3E%3C/svg%3E">
+
+<!-- ===================== FONTS ===================== -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+
+/* =====================================================
+   ROOT
+===================================================== */
+
+:root{
+    --bg:#050816;
+    --panel:rgba(255,255,255,.055);
+    --text:#f7fbff;
+    --muted:#9ca7b8;
+    --cyan:#00d4ff;
+    --purple:#7c3aed;
+    --border:rgba(255,255,255,.10);
+    --radius:24px;
+    --max:1180px;
+}
+
+
+/* =====================================================
+   RESET
+===================================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:Poppins,sans-serif;
+    color:var(--text);
+
+    background:
+
+        radial-gradient(
+            circle at 10% 0%,
+            rgba(0,212,255,.12),
+            transparent 32%
+        ),
+
+        radial-gradient(
+            circle at 90% 90%,
+            rgba(124,58,237,.14),
+            transparent 34%
+        ),
+
+        var(--bg);
+
+    overflow-x:hidden;
+}
+
+a{
+    color:inherit;
+}
+
+img{
+    max-width:100%;
+}
+
+.container{
+    width:min(var(--max),92%);
+    margin:auto;
+}
+
+
+/* =====================================================
+   ACCESSIBILITY HELPERS
+===================================================== */
+
+.skip-link{
+    position:absolute;
+    left:-9999px;
+    top:0;
+    z-index:2000;
+    padding:12px 18px;
+    border-radius:0 0 10px 0;
+    background:var(--cyan);
+    color:#050816;
+    font-weight:700;
+    text-decoration:none;
+}
+
+.skip-link:focus{
+    left:0;
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible{
+    outline:3px solid var(--cyan);
+    outline-offset:3px;
+    border-radius:6px;
+}
+
+.sr-only{
+    position:absolute;
+    width:1px;
+    height:1px;
+    padding:0;
+    margin:-1px;
+    overflow:hidden;
+    clip:rect(0,0,0,0);
+    white-space:nowrap;
+    border:0;
+}
+
+@media(prefers-reduced-motion:reduce){
+
+    html{
+        scroll-behavior:auto;
+    }
+
+    *,
+    *::before,
+    *::after{
+        animation-duration:.001ms!important;
+        animation-iteration-count:1!important;
+        transition-duration:.001ms!important;
+        scroll-behavior:auto!important;
+    }
+}
+
+
+/* =====================================================
+   HEADER
+===================================================== */
+
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:22px 8%;
+    background:rgba(255,255,255,0.05);
+    -webkit-backdrop-filter:blur(20px);
+    backdrop-filter:blur(20px);
+    border-bottom:1px solid rgba(255,255,255,0.1);
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+.brand{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    flex-shrink:0;
+    color:white;
+    text-decoration:none;
+}
+
+.brand-logo{
+    display:block;
+    width:100px;
+    height:auto;
+    max-width:40vw;
+}
+
+.brand-text{
+    display:none;
+    font-size:26px;
+    font-weight:700;
+    color:white;
+    white-space:nowrap;
+}
+
+.brand-text span{
+    color:var(--cyan);
+}
+
+html.no-logo .brand-logo{
+    display:none;
+}
+
+html.no-logo .brand-text{
+    display:inline-block;
+}
+
+nav{
+    display:flex;
+    gap:25px;
+}
+
+nav a{
+    color:#ddd;
+    text-decoration:none;
+    font-weight:500;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:var(--cyan);
+}
+
+nav a[aria-current="page"]{
+    color:var(--cyan);
+}
+
+
+/* =====================================================
+   HERO
+===================================================== */
+
+.hero{
+    min-height:530px;
+    display:grid;
+    place-items:center;
+    text-align:center;
+    padding:100px 20px;
+
+    background:
+
+        linear-gradient(
+            rgba(5,8,22,.45),
+            rgba(5,8,22,.82)
+        ),
+
+        url("https://images.unsplash.com/photo-1521791055366-0d553872125f?w=1800")
+        center/cover;
+}
+
+.badge{
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+    padding:8px 14px;
+    border:1px solid rgba(0,212,255,.25);
+    background:rgba(0,212,255,.07);
+    border-radius:999px;
+    color:#aeefff;
+    font-size:12px;
+    margin-bottom:20px;
+}
+
+.hero h1{
+    font-size:clamp(34px,7vw,76px);
+    line-height:1.05;
+    overflow-wrap:break-word;
+
+    background:
+
+        linear-gradient(
+            90deg,
+            #fff,
+            var(--cyan),
+            #b794ff
+        );
+
+    -webkit-background-clip:text;
+    background-clip:text;
+    color:transparent;
+    margin-bottom:22px;
+}
+
+.hero p{
+    max-width:760px;
+    margin:auto;
+    color:#c0c8d5;
+    font-size:17px;
+    line-height:1.9;
+}
+
+.hero-actions{
+    margin-top:30px;
+    display:flex;
+    justify-content:center;
+    gap:12px;
+    flex-wrap:wrap;
+}
+
+
+/* =====================================================
+   BUTTON
+===================================================== */
+
+.btn{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    gap:8px;
+    min-height:48px;
+    padding:0 20px;
+    border-radius:14px;
+    text-decoration:none;
+    border:1px solid var(--border);
+    cursor:pointer;
+    font-family:inherit;
+    font-size:15px;
+    font-weight:600;
+    transition:.25s;
+    text-align:center;
+}
+
+.btn-primary{
+    border:0;
+    color:#fff;
+
+    background:
+
+        linear-gradient(
+            135deg,
+            var(--cyan),
+            var(--purple)
+        );
+}
+
+.btn-secondary{
+    background:rgba(255,255,255,.06);
+    color:#fff;
+}
+
+.btn:hover{
+    transform:translateY(-2px);
+
+    box-shadow:
+        0 14px 35px rgba(0,0,0,.22);
+}
+
+
+/* =====================================================
+   SECTIONS
+===================================================== */
+
+section{
+    padding:85px 0;
+}
+
+.section-head{
+    text-align:center;
+    margin-bottom:45px;
+}
+
+.section-head h2{
+    font-size:clamp(28px,5vw,48px);
+    overflow-wrap:break-word;
+
+    background:
+
+        linear-gradient(
+            90deg,
+            #fff,
+            var(--cyan)
+        );
+
+    -webkit-background-clip:text;
+    background-clip:text;
+    color:transparent;
+}
+
+.section-head p{
+    color:var(--muted);
+    margin-top:10px;
+    font-size:14px;
+}
+
+
+/* =====================================================
+   CONTACT CARDS
+===================================================== */
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:22px;
+}
+
+.card{
+    position:relative;
+    overflow:hidden;
+    padding:32px 25px;
+    text-align:center;
+    border:1px solid var(--border);
+    border-radius:var(--radius);
+    background:var(--panel);
+    -webkit-backdrop-filter:blur(18px);
+    backdrop-filter:blur(18px);
+    transition:.3s;
+}
+
+.card:hover,
+.card:focus-within{
+    transform:translateY(-7px);
+    border-color:rgba(0,212,255,.25);
+}
+
+.icon{
+    width:64px;
+    height:64px;
+    margin:0 auto 20px;
+    border-radius:18px;
+    display:grid;
+    place-items:center;
+    font-size:28px;
+
+    background:
+
+        linear-gradient(
+            135deg,
+            var(--cyan),
+            var(--purple)
+        );
+}
+
+.card h3{
+    font-size:20px;
+    margin-bottom:10px;
+}
+
+.card p{
+    color:var(--muted);
+    font-size:13px;
+    line-height:1.85;
+}
+
+.card p + p{
+    margin-top:18px;
+}
+
+.card a{
+    color:var(--cyan);
+    text-decoration:none;
+}
+
+.card a:hover{
+    color:#fff;
+}
+
+
+/* =====================================================
+   CONTACT AREA
+===================================================== */
+
+.contact-grid{
+    display:grid;
+    grid-template-columns:1.08fr .92fr;
+    gap:25px;
+}
+
+.panel{
+    border:1px solid var(--border);
+    border-radius:28px;
+    background:var(--panel);
+    -webkit-backdrop-filter:blur(18px);
+    backdrop-filter:blur(18px);
+    padding:35px;
+}
+
+.panel h2{
+    font-size:30px;
+    margin-bottom:8px;
+}
+
+.panel>p{
+    color:var(--muted);
+    font-size:13px;
+    line-height:1.8;
+    margin-bottom:25px;
+}
+
+.form-row{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:15px;
+}
+
+.field{
+    margin-bottom:17px;
+}
+
+.field label{
+    display:block;
+    color:#d7deea;
+    font-size:12px;
+    margin-bottom:7px;
+}
+
+.field input,
+.field textarea,
+.field select{
+    width:100%;
+    border:1px solid var(--border);
+    outline:none;
+    background:rgba(0,0,0,.25);
+    color:#fff;
+    border-radius:13px;
+    padding:13px 14px;
+    font-family:inherit;
+    font-size:13px;
+}
+
+.field input:focus,
+.field textarea:focus,
+.field select:focus{
+    border-color:var(--cyan);
+
+    box-shadow:
+        0 0 0 3px rgba(0,212,255,.08);
+}
+
+.field input[aria-invalid="true"],
+.field textarea[aria-invalid="true"]{
+    border-color:#ff8b8b;
+}
+
+.field textarea{
+    height:135px;
+    resize:vertical;
+}
+
+.field select option{
+    background:#0b1020;
+}
+
+.full-btn{
+    width:100%;
+    margin-top:2px;
+}
+
+.field-error{
+    color:#ff8b8b;
+    font-size:12px;
+    margin-top:-12px;
+    margin-bottom:15px;
+    display:none;
+}
+
+.field-error.show{
+    display:block;
+}
+
+.hp-field{
+    position:absolute;
+    left:-9999px;
+    width:1px;
+    height:1px;
+    overflow:hidden;
+}
+
+
+/* =====================================================
+   INFORMATION
+===================================================== */
+
+.side{
+    display:grid;
+    gap:18px;
+    align-content:start;
+}
+
+.info{
+    padding:25px;
+    border-radius:22px;
+    border:1px solid var(--border);
+    background:rgba(255,255,255,.045);
+}
+
+.info h3{
+    font-size:19px;
+    margin-bottom:12px;
+}
+
+.info p,
+.info li{
+    color:var(--muted);
+    font-size:13px;
+    line-height:1.8;
+}
+
+.info ul{
+    list-style:none;
+}
+
+.info li{
+    padding:8px 0;
+    border-bottom:1px solid rgba(255,255,255,.06);
+    display:flex;
+    justify-content:space-between;
+    gap:15px;
+    flex-wrap:wrap;
+}
+
+.info li:last-child{
+    border-bottom:0;
+}
+
+.info a{
+    color:var(--cyan);
+    text-decoration:none;
+    overflow-wrap:anywhere;
+}
+
+.open{
+    color:var(--cyan)!important;
+    font-weight:600;
+    white-space:nowrap;
+}
+
+.highlight{
+    color:#ccefff!important;
+}
+
+
+/* =====================================================
+   LOCATION
+===================================================== */
+
+.location{
+    border:1px solid var(--border);
+    border-radius:28px;
+    overflow:hidden;
+    min-height:390px;
+    position:relative;
+
+    background:
+
+        linear-gradient(
+            135deg,
+            rgba(0,212,255,.08),
+            rgba(124,58,237,.10)
+        ),
+
+        #0b1020;
+}
+
+.location-bg{
+    position:absolute;
+    inset:0;
+    opacity:.28;
+
+    background-image:
+
+        linear-gradient(
+            rgba(255,255,255,.07) 1px,
+            transparent 1px
+        ),
+
+        linear-gradient(
+            90deg,
+            rgba(255,255,255,.07) 1px,
+            transparent 1px
+        );
+
+    background-size:45px 45px;
+}
+
+.location-content{
+    position:relative;
+    z-index:1;
+    min-height:390px;
+    display:grid;
+    place-items:center;
+    text-align:center;
+    padding:35px 20px;
+}
+
+.location-box{
+    max-width:600px;
+    padding:35px;
+    border-radius:25px;
+    background:rgba(5,8,22,.75);
+    -webkit-backdrop-filter:blur(14px);
+    backdrop-filter:blur(14px);
+    border:1px solid var(--border);
+}
+
+.pin{
+    font-size:42px;
+    margin-bottom:8px;
+}
+
+.location-box h3{
+    font-size:28px;
+    margin-bottom:10px;
+    overflow-wrap:break-word;
+}
+
+.location-box p{
+    color:var(--muted);
+    font-size:13px;
+    line-height:1.9;
+    margin-bottom:22px;
+}
+
+
+/* =====================================================
+   FAQ
+===================================================== */
+
+.faq-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:18px;
+}
+
+.faq{
+    padding:25px;
+    border-radius:20px;
+    border:1px solid var(--border);
+    background:var(--panel);
+    transition:.25s;
+}
+
+.faq:hover{
+    transform:translateY(-4px);
+    border-color:rgba(0,212,255,.22);
+}
+
+.faq h3{
+    font-size:17px;
+    margin-bottom:9px;
+}
+
+.faq p{
+    font-size:13px;
+    color:var(--muted);
+    line-height:1.8;
+}
+
+
+/* =====================================================
+   CTA
+===================================================== */
+
+.cta{
+    width:min(1080px,92%);
+    margin:0 auto 80px;
+    padding:65px 25px;
+    border-radius:32px;
+    text-align:center;
+
+    background:
+
+        linear-gradient(
+            135deg,
+            var(--cyan),
+            var(--purple)
+        );
+
+    box-shadow:
+        0 25px 70px rgba(0,0,0,.25);
+}
+
+.cta h2{
+    font-size:clamp(26px,5vw,46px);
+    margin-bottom:12px;
+    overflow-wrap:break-word;
+}
+
+.cta p{
+    max-width:720px;
+    margin:0 auto 25px;
+    font-size:14px;
+    line-height:1.8;
+}
+
+.cta .btn{
+    background:#fff;
+    color:#111;
+    border:0;
+}
+
+
+/* =====================================================
+   FOOTER (UNIFIED ACROSS ALL PAGES)
+===================================================== */
+
+.site-footer{
+    background:linear-gradient(135deg,#070b18,#0c1224);
+    border-top:1px solid rgba(255,255,255,.10);
+    padding-top:60px;
+    color:white;
+}
+
+.footer-container{
+    width:92%;
+    max-width:1200px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:1.2fr 1fr 1fr;
+    gap:50px;
+    padding-bottom:50px;
+}
+
+.footer-brand h2{
+    font-size:25px;
+    margin-bottom:10px;
+    background:linear-gradient(90deg,#ffffff,#00d4ff);
+    -webkit-background-clip:text;
+    background-clip:text;
+    -webkit-text-fill-color:transparent;
+    color:transparent;
+}
+
+.footer-brand>p{
+    color:#9ca7b8;
+    font-size:14px;
+    line-height:1.7;
+}
+
+.footer-brands{
+    display:flex;
+    flex-wrap:wrap;
+    gap:8px;
+    margin-top:22px;
+}
+
+.footer-brands span{
+    padding:7px 12px;
+    border-radius:8px;
+    font-size:11px;
+    color:#cdd5e1;
+    background:rgba(255,255,255,.05);
+    border:1px solid rgba(255,255,255,.08);
+    transition:.3s;
+}
+
+.footer-brands span:hover{
+    color:#00d4ff;
+    border-color:#00d4ff;
+    transform:translateY(-2px);
+}
+
+.footer-column{
+    display:flex;
+    flex-direction:column;
+    gap:12px;
+}
+
+.footer-column h3{
+    font-size:18px;
+    margin-bottom:8px;
+    color:#fff;
+}
+
+.footer-column a{
+    color:#9ca7b8;
+    text-decoration:none;
+    font-size:13px;
+    line-height:1.7;
+    transition:.3s;
+    overflow-wrap:anywhere;
+}
+
+.footer-column a:hover{
+    color:#00d4ff;
+}
+
+.footer-column p{
+    color:#9ca7b8;
+    font-size:13px;
+    line-height:1.9;
+    margin:0 0 4px;
+    overflow-wrap:anywhere;
+}
+
+.footer-map{
+    display:inline-block;
+    color:#00d4ff!important;
+    margin-top:5px;
+    text-decoration:none;
+}
+
+.footer-bottom{
+    border-top:1px solid rgba(255,255,255,.08);
+    width:92%;
+    max-width:1200px;
+    margin:auto;
+    padding:25px 0;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.footer-bottom p{
+    color:#737d8e;
+    font-size:11px;
+    margin:0;
+}
+
+.footer-bottom a{
+    color:#737d8e;
+    text-decoration:none;
+}
+
+.footer-bottom a:hover{
+    color:#00d4ff;
+}
+
+.footer-bottom strong{
+    color:#00d4ff;
+}
+
+
+/* =====================================================
+   TOAST
+===================================================== */
+
+.toast{
+    position:fixed;
+    right:20px;
+    bottom:20px;
+    z-index:3000;
+    max-width:calc(100vw - 40px);
+    padding:13px 18px;
+    border-radius:12px;
+    background:#111827;
+    color:#fff;
+    border:1px solid var(--border);
+
+    box-shadow:
+        0 15px 40px rgba(0,0,0,.35);
+
+    transform:translateY(120px);
+    opacity:0;
+    visibility:hidden;
+    transition:.3s;
+    font-size:13px;
+}
+
+.toast.show{
+    transform:translateY(0);
+    opacity:1;
+    visibility:visible;
+}
+
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media(max-width:850px){
+
+    .cards,
+    .contact-grid,
+    .faq-grid{
+        grid-template-columns:1fr;
+    }
+
+    .footer-container{
+        grid-template-columns:1fr 1fr;
+        gap:35px;
+    }
+
+    .footer-brand{
+        grid-column:1 / -1;
+    }
+
+    .footer-bottom{
+        flex-direction:column;
+        text-align:center;
+    }
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media(max-width:600px){
+
+    section{
+        padding:65px 0;
+    }
+
+    .hero{
+        min-height:500px;
+        padding:80px 20px;
+    }
+
+    .hero p{
+        font-size:14px;
+    }
+
+    .form-row{
+        grid-template-columns:1fr;
+    }
+
+    .panel{
+        padding:24px;
+    }
+
+    .location-box{
+        padding:25px;
+    }
+
+    .site-footer{
+        padding-top:45px;
+    }
+
+    .footer-container{
+        grid-template-columns:1fr;
+        gap:30px;
+    }
+
+    .footer-brand{
+        grid-column:auto;
+    }
+
+    .footer-brand h2{
+        font-size:22px;
+    }
+
+    .footer-bottom{
+        padding:20px 0;
+    }
+}
+
+
+/* ===== VERY SMALL PHONES (320-360px safety) ===== */
+
+@media(max-width:360px){
+
+    .badge{
+        font-size:11px;
+        padding:8px 11px;
+        text-align:left;
+        line-height:1.5;
+    }
+
+    .panel{
+        padding:20px;
+    }
+
+    .location-box{
+        padding:20px;
+    }
+
+    .location-box h3{
+        font-size:23px;
+    }
+
+    .info{
+        padding:20px;
+    }
+
+    .toast{
+        right:12px;
+        left:12px;
+        bottom:12px;
+        max-width:none;
+    }
+}
+
+
+/* =====================================================
+   MOBILE HEADER / HAMBURGER MENU
+===================================================== */
+
+.menu-toggle{
+    display:none;
+    flex-direction:column;
+    justify-content:space-between;
+    width:26px;
+    height:19px;
+    background:none;
+    border:none;
+    cursor:pointer;
+    padding:0;
+    z-index:1200;
+}
+
+.menu-toggle span{
+    display:block;
+    width:100%;
+    height:3px;
+    border-radius:3px;
+    background:#ffffff;
+    transition:.3s ease;
+}
+
+.menu-toggle.active span:nth-child(1){
+    transform:translateY(8px) rotate(45deg);
+}
+
+.menu-toggle.active span:nth-child(2){
+    opacity:0;
+}
+
+.menu-toggle.active span:nth-child(3){
+    transform:translateY(-8px) rotate(-45deg);
+}
+
+@media(max-width:768px){
+
+    header{
+        flex-direction:row;
+        justify-content:space-between;
+        align-items:center;
+        padding:18px 6%;
+        position:sticky;
+    }
+
+    .menu-toggle{
+        display:flex;
+    }
+
+    nav{
+        position:absolute;
+        top:100%;
+        left:0;
+        width:100%;
+        flex-direction:column;
+        align-items:stretch;
+        gap:0;
+        background:rgba(5,8,22,.98);
+        -webkit-backdrop-filter:blur(20px);
+        backdrop-filter:blur(20px);
+        border-bottom:1px solid rgba(255,255,255,.1);
+        max-height:0;
+        overflow:hidden;
+        visibility:hidden;
+        transition:max-height .35s ease, visibility .35s ease;
+    }
+
+    nav.open{
+        max-height:420px;
+        visibility:visible;
+    }
+
+    nav a{
+        padding:16px 0;
+        width:100%;
+        text-align:center;
+        font-size:15px;
+        border-top:1px solid rgba(255,255,255,.06);
+    }
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+<a class="skip-link" href="#main">Skip to main content</a>
+
+
+<!-- =====================================================
+     HEADER
+===================================================== -->
+
+<header>
+
+    <a class="brand" href="index.html" aria-label="M.Tech Ahmedabad - Home">
+        <img class="brand-logo" src="logoo.png" alt="M.Tech Ahmedabad" width="100">
+        <span class="brand-text">M<span>.Tech</span></span>
+    </a>
+
+    <button class="menu-toggle" id="menuToggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mainNav">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+    <nav id="mainNav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html" aria-current="page">Contact</a>
+        <a href="about.html">About</a>
+    </nav>
+
+</header>
+
+
+<main id="main">
+
+
+<!-- =====================================================
+     HERO
+===================================================== -->
+
+<section class="hero">
+
+<div class="container">
+
+<div class="badge">&#9679; M.Tech Ahmedabad &bull; All Brands of Laptops &amp; Desktops</div>
+
+<h1>Let's Talk Technology</h1>
+
+<p>
+Have a question about a laptop, desktop, CCTV, printer,
+networking solution or accessories?
+Our team is ready to help you find the right technology for your needs.
+</p>
+
+<div class="hero-actions">
+
+<a class="btn btn-primary" href="tel:+917383037521">
+&#128222; Call M.Tech
+</a>
+
+<a class="btn btn-secondary" href="https://wa.me/917383037521" target="_blank" rel="noopener noreferrer">
+&#128172; WhatsApp
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     GET IN TOUCH
+===================================================== -->
+
+<section>
+
+<div class="container">
+
+<div class="section-head">
+
+<h2>Get In Touch</h2>
+
+<p>Choose the easiest way to connect with M.Tech Ahmedabad.</p>
+
+</div>
+
+
+<div class="cards">
+
+<article class="card">
+
+<div class="icon" aria-hidden="true">&#128222;</div>
+
+<h3>Call Us</h3>
+
+<p>Speak directly with our team.</p>
+
+<p>
+<a href="tel:+917383037521" class="btn btn-secondary">
+&#128222; +91 73830 37521
+</a>
+</p>
+
+</article>
+
+
+<article class="card">
+
+<div class="icon" aria-hidden="true">&#9993;&#65039;</div>
+
+<h3>Send an Email</h3>
+
+<p>Send us your requirement by email.</p>
+
+<p>
+<a href="mailto:info@mtechahmedabad.com" class="btn btn-secondary">
+&#9993;&#65039; Send by Email
+</a>
+</p>
+
+</article>
+
+
+<article class="card">
+
+<div class="icon" aria-hidden="true">&#128205;</div>
+
+<h3>Visit Us</h3>
+
+<p>Come visit our store in Ahmedabad.</p>
+
+<p>
+<a href="https://maps.app.goo.gl/6pT45zfBXSbPrRMz9" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+&#128205; Visit Us
+</a>
+</p>
+
+</article>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     CONTACT FORM
+===================================================== -->
+
+<section id="contact">
+
+<div class="container">
+
+<div class="contact-grid">
+
+<div class="panel">
+
+<h2>Send Us A Message</h2>
+
+<p>
+Fill in your requirement below and hit Submit. It will open WhatsApp
+with your message ready to send to our team.
+</p>
+
+<form id="contactForm" novalidate>
+
+<div class="form-row">
+
+<div class="field">
+<label for="name">Your Name *</label>
+<input id="name" name="name" type="text" maxlength="60" autocomplete="name" placeholder="Enter your name" required>
+</div>
+
+<div class="field">
+<label for="phone">Phone Number *</label>
+<input id="phone" name="phone" type="tel" maxlength="20" inputmode="tel" autocomplete="tel" placeholder="Enter your phone" required>
+</div>
+
+</div>
+
+
+<div class="form-row">
+
+<div class="field">
+<label for="email">Email Address</label>
+<input id="email" name="email" type="email" maxlength="80" autocomplete="email" placeholder="Enter your email">
+</div>
+
+<div class="field">
+<label for="interest">Interested In</label>
+<select id="interest" name="interest">
+<option value="">Select a category</option>
+<option>Laptop</option>
+<option>Desktop</option>
+<option>CCTV</option>
+<option>Printer</option>
+<option>Accessories</option>
+<option>Networking</option>
+<option>Other</option>
+</select>
+</div>
+
+</div>
+
+
+<div class="field">
+<label for="message">Your Message *</label>
+<textarea id="message" name="message" maxlength="700" placeholder="Tell us about your requirement..." required></textarea>
+</div>
+
+
+<!-- Honeypot: hidden from people, often filled in by bots. -->
+<div class="hp-field" aria-hidden="true">
+<label for="company">Company (leave this empty)</label>
+<input id="company" name="company" type="text" tabindex="-1" autocomplete="off">
+</div>
+
+
+<p class="field-error" id="formError" role="alert"></p>
+
+<div class="form-row">
+<button class="btn btn-primary full-btn" type="submit">
+&#9989; Submit
+</button>
+</div>
+
+</form>
+
+</div>
+
+
+<!-- SIDE INFO -->
+
+<div class="side">
+
+<div class="info">
+
+<h3>Visit M.Tech</h3>
+
+<p>
+Looking for the right computer, laptop,
+CCTV system, printer or office solution?
+Visit us and discuss your requirements with our team.
+</p>
+
+<br>
+
+<!-- TODO: replace with the full street address + PIN code. -->
+<p class="highlight">M.Tech Ahmedabad, Ahmedabad, Gujarat</p>
+
+</div>
+
+
+<div class="info">
+
+<h3>Business Hours</h3>
+
+<ul>
+
+<li>
+<span>Monday - Saturday</span>
+<span class="open">10:30 AM - 8:00 PM</span>
+</li>
+
+<li>
+<span>Sunday</span>
+<span>Closed</span>
+</li>
+
+</ul>
+
+</div>
+
+
+<div class="info">
+
+<h3>Quick Contact</h3>
+
+<ul>
+
+<li>
+<span>Phone</span>
+<a href="tel:+917383037521">+91 73830 37521</a>
+</li>
+
+<li>
+<span>WhatsApp</span>
+<a href="https://wa.me/917383037521" target="_blank" rel="noopener noreferrer">+91 73830 37521</a>
+</li>
+
+<li>
+<span>Email</span>
+<a href="mailto:info@mtechahmedabad.com">info@mtechahmedabad.com</a>
+</li>
+
+<li>
+<span>Instagram</span>
+<a href="https://instagram.com/mtechahmedabad" target="_blank" rel="noopener noreferrer">@mtechahmedabad</a>
+</li>
+
+<li>
+<span>Website</span>
+<a href="https://www.mtechahmedabad.com" target="_blank" rel="noopener noreferrer">www.mtechahmedabad.com</a>
+</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     LOCATION
+===================================================== -->
+
+<section id="location">
+
+<div class="container">
+
+<div class="section-head">
+
+<h2>Find Us</h2>
+
+<p>
+Visit M.Tech Ahmedabad for laptops, desktops
+and technology solutions.
+</p>
+
+</div>
+
+
+<div class="location">
+
+<div class="location-bg" aria-hidden="true"></div>
+
+<div class="location-content">
+
+<div class="location-box">
+
+<div class="pin" aria-hidden="true">&#128205;</div>
+
+<h3>M.Tech Ahmedabad</h3>
+
+<!-- TODO: replace with the full street address + PIN code. -->
+<p>M.Tech Ahmedabad, Ahmedabad, Gujarat</p>
+
+<a class="btn btn-primary" href="https://maps.app.goo.gl/6pT45zfBXSbPrRMz9" target="_blank" rel="noopener noreferrer">
+&#128205; Open in Google Maps
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     FAQ
+===================================================== -->
+
+<section id="faq">
+
+<div class="container">
+
+<div class="section-head">
+
+<h2>Frequently Asked Questions</h2>
+
+<p>Quick answers to common questions about M.Tech Ahmedabad.</p>
+
+</div>
+
+<div class="faq-grid">
+
+<div class="faq">
+<h3>Which brands do you sell and repair?</h3>
+<p>We work with all major laptop, desktop, printer and CCTV brands, and can source or service most models on request.</p>
+</div>
+
+<div class="faq">
+<h3>Do you offer home or office visits?</h3>
+<p>Yes, we offer on-site installation and repair for CCTV, networking and computer setups within Ahmedabad.</p>
+</div>
+
+<div class="faq">
+<h3>What are your store timings?</h3>
+<p>We're open Monday to Saturday, 10:30 AM to 8:00 PM. We remain closed on Sundays.</p>
+</div>
+
+<div class="faq">
+<h3>Do repairs come with a warranty?</h3>
+<p>Our repair and installation services come with a service warranty. Ask our team for the details that apply to your device.</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     CTA
+===================================================== -->
+
+<section>
+
+<div class="cta">
+
+<h2>Ready To Get Started?</h2>
+
+<p>
+Call, WhatsApp or visit M.Tech Ahmedabad today and let our team help you
+find the right laptop, desktop, CCTV or office technology solution.
+</p>
+
+<a class="btn" href="https://wa.me/917383037521" target="_blank" rel="noopener noreferrer">
+&#128172; Chat on WhatsApp
+</a>
+
+</div>
+
+</section>
+
+</main>
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer class="site-footer">
+
+<div class="footer-container">
+
+<div class="footer-brand">
+
+<h2>M.Tech Ahmedabad</h2>
+
+<p>
+Laptops, desktops, CCTV, printers, networking and
+accessories with reliable technical support in Ahmedabad.
+</p>
+
+<div class="footer-brands">
+<span>Laptops</span>
+<span>Desktops</span>
+<span>CCTV</span>
+<span>Printers</span>
+<span>Networking</span>
+<span>Accessories</span>
+</div>
+
+</div>
+
+<div class="footer-column">
+
+<h3>Quick Links</h3>
+
+<a href="index.html">Home</a>
+<a href="products.html">Products</a>
+<a href="services.html">Services</a>
+<a href="contact.html">Contact</a>
+<a href="about.html">About</a>
+
+</div>
+
+<div class="footer-column">
+
+<h3>Contact</h3>
+
+<!-- TODO: add the full street address + PIN code here once confirmed. -->
+
+<a href="tel:+917383037521">&#128222; +91 73830 37521</a>
+<a href="mailto:info@mtechahmedabad.com">&#9993;&#65039; info@mtechahmedabad.com</a>
+<a href="https://wa.me/917383037521" target="_blank" rel="noopener noreferrer">&#128172; WhatsApp</a>
+<a href="https://instagram.com/mtechahmedabad" target="_blank" rel="noopener noreferrer">&#128247; Instagram</a>
+
+<a class="footer-map" href="https://maps.app.goo.gl/6pT45zfBXSbPrRMz9" target="_blank" rel="noopener noreferrer">
+&#128205; Get Directions
+</a>
+
+</div>
+
+</div>
+
+<div class="footer-bottom">
+
+<p>&copy; 2026 <strong>M.Tech</strong> Ahmedabad Computer Store</p>
+
+<p>
+<a href="tel:+917383037521">&#128222; +91 73830 37521</a>
+&nbsp;|&nbsp;
+<a href="mailto:info@mtechahmedabad.com">&#9993;&#65039; info@mtechahmedabad.com</a>
+</p>
+
+</div>
+
+</footer>
+
+
+<!-- =====================================================
+     TOAST
+===================================================== -->
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+
+<!-- =====================================================
+     STRUCTURED DATA
+===================================================== -->
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ComputerStore",
+  "name": "M.Tech Ahmedabad Computer Store",
+  "url": "https://www.mtechahmedabad.com/",
+  "telephone": "+91-73830-37521",
+  "email": "info@mtechahmedabad.com",
+  "image": "https://www.mtechahmedabad.com/logoo.png",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Ahmedabad",
+    "addressRegion": "Gujarat",
+    "addressCountry": "IN"
+  },
+  "openingHoursSpecification": [{
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+    "opens": "10:30",
+    "closes": "20:00"
+  }],
+  "sameAs": ["https://instagram.com/mtechahmedabad"]
+}
+</script>
+
+
+
+
+<!-- ===================== SCRIPTS ===================== -->
+
+<script src="assets/menu.js"></script>
+<script src="assets/contact.js"></script>
+
+</body>
+</html>

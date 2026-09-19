@@ -1,0 +1,1388 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<!-- ===================== BASICS ===================== -->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- ===================== SECURITY ===================== -->
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' https: data:; connect-src 'none'; form-action 'none'; base-uri 'none'; object-src 'none'; frame-src 'none'; upgrade-insecure-requests">
+
+<!-- ===================== SEO ===================== -->
+<title>Services | M.Tech Ahmedabad</title>
+
+<meta name="description" content="Laptop and desktop repair, CCTV installation, printer service, upgrades, Windows setup, data recovery and virus protection from M.Tech Ahmedabad.">
+
+<link rel="canonical" href="https://www.mtechahmedabad.com/services.html">
+
+<meta name="theme-color" content="#050816">
+<meta name="robots" content="index, follow">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="M.Tech Ahmedabad">
+<meta property="og:title" content="Services | M.Tech Ahmedabad">
+<meta property="og:description" content="Repair, installation, upgrade and maintenance services for computers, laptops, CCTV and printers in Ahmedabad.">
+<meta property="og:url" content="https://www.mtechahmedabad.com/services.html">
+<meta property="og:image" content="https://www.mtechahmedabad.com/logoo.png">
+<meta name="twitter:card" content="summary">
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23050816'/%3E%3Ctext x='16' y='23' font-family='Arial,Helvetica,sans-serif' font-size='19' font-weight='bold' fill='%2300d4ff' text-anchor='middle'%3EM%3C/text%3E%3C/svg%3E">
+
+<!-- ===================== FONTS ===================== -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+/* =====================================================
+   GLOBAL
+===================================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#050816;
+    color:white;
+    overflow-x:hidden;
+}
+
+img{
+    max-width:100%;
+}
+
+
+/* =====================================================
+   ACCESSIBILITY HELPERS
+===================================================== */
+
+.skip-link{
+    position:absolute;
+    left:-9999px;
+    top:0;
+    z-index:2000;
+    padding:12px 18px;
+    border-radius:0 0 10px 0;
+    background:#00d4ff;
+    color:#050816;
+    font-weight:700;
+    text-decoration:none;
+}
+
+.skip-link:focus{
+    left:0;
+}
+
+a:focus-visible,
+button:focus-visible{
+    outline:3px solid #00d4ff;
+    outline-offset:3px;
+    border-radius:6px;
+}
+
+.sr-only{
+    position:absolute;
+    width:1px;
+    height:1px;
+    padding:0;
+    margin:-1px;
+    overflow:hidden;
+    clip:rect(0,0,0,0);
+    white-space:nowrap;
+    border:0;
+}
+
+@media(prefers-reduced-motion:reduce){
+
+    html{
+        scroll-behavior:auto;
+    }
+
+    *,
+    *::before,
+    *::after{
+        animation-duration:.001ms!important;
+        animation-iteration-count:1!important;
+        transition-duration:.001ms!important;
+        scroll-behavior:auto!important;
+    }
+}
+
+
+/* =====================================================
+   BACKGROUND GLOW
+===================================================== */
+
+body::before{
+    content:'';
+    position:fixed;
+    top:-250px;
+    left:-250px;
+    width:600px;
+    height:600px;
+    background:#00d4ff25;
+    filter:blur(200px);
+    z-index:-1;
+    pointer-events:none;
+}
+
+body::after{
+    content:'';
+    position:fixed;
+    right:-250px;
+    bottom:-250px;
+    width:600px;
+    height:600px;
+    background:#7c3aed25;
+    filter:blur(200px);
+    z-index:-1;
+    pointer-events:none;
+}
+
+
+/* =====================================================
+   HEADER
+===================================================== */
+
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:22px 8%;
+    background:rgba(255,255,255,0.05);
+    -webkit-backdrop-filter:blur(20px);
+    backdrop-filter:blur(20px);
+    border-bottom:1px solid rgba(255,255,255,0.1);
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+.brand{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    flex-shrink:0;
+    color:white;
+    text-decoration:none;
+}
+
+.brand-logo{
+    display:block;
+    width:100px;
+    height:auto;
+    max-width:40vw;
+}
+
+.brand-text{
+    display:none;
+    font-size:26px;
+    font-weight:700;
+    color:white;
+    white-space:nowrap;
+}
+
+.brand-text span{
+    color:#00d4ff;
+}
+
+html.no-logo .brand-logo{
+    display:none;
+}
+
+html.no-logo .brand-text{
+    display:inline-block;
+}
+
+nav{
+    display:flex;
+    gap:25px;
+}
+
+nav a{
+    color:#ddd;
+    text-decoration:none;
+    font-weight:500;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:#00d4ff;
+}
+
+nav a[aria-current="page"]{
+    color:#00d4ff;
+}
+
+
+/* =====================================================
+   HERO
+===================================================== */
+
+.services-hero{
+    min-height:520px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    padding:100px 20px;
+
+    background:
+    linear-gradient(
+        rgba(5,8,22,.78),
+        rgba(5,8,22,.82)
+    ),
+    url('https://images.unsplash.com/photo-1581092921461-eab62e97a780?w=1800');
+
+    background-size:cover;
+    background-position:center;
+}
+
+.hero-content{
+    max-width:900px;
+}
+
+.hero-content h1{
+    font-size:68px;
+    font-weight:700;
+    line-height:1.1;
+    overflow-wrap:break-word;
+
+    background:
+    linear-gradient(
+        90deg,
+        #ffffff,
+        #00d4ff
+    );
+
+    -webkit-background-clip:text;
+    background-clip:text;
+    -webkit-text-fill-color:transparent;
+    color:transparent;
+}
+
+.hero-content p{
+    margin-top:25px;
+    color:#bdbdbd;
+    font-size:19px;
+    line-height:1.8;
+}
+
+.hero-btn{
+    display:inline-block;
+    margin-top:35px;
+    padding:15px 35px;
+    border-radius:50px;
+    text-decoration:none;
+    color:white;
+    font-weight:600;
+
+    background:
+    linear-gradient(
+        135deg,
+        #00d4ff,
+        #7c3aed
+    );
+
+    transition:.3s;
+}
+
+.hero-btn:hover{
+    transform:translateY(-4px);
+
+    box-shadow:
+    0 15px 40px
+    rgba(0,212,255,.30);
+}
+
+
+/* =====================================================
+   INTRO
+===================================================== */
+
+.intro{
+    text-align:center;
+    padding:90px 20px 50px;
+    max-width:900px;
+    margin:auto;
+}
+
+.intro h2{
+    font-size:45px;
+    margin-bottom:20px;
+    overflow-wrap:break-word;
+
+    background:
+    linear-gradient(
+        90deg,
+        #ffffff,
+        #00d4ff
+    );
+
+    -webkit-background-clip:text;
+    background-clip:text;
+    -webkit-text-fill-color:transparent;
+    color:transparent;
+}
+
+.intro p{
+    color:#a9a9a9;
+    font-size:16px;
+    line-height:1.8;
+}
+
+
+/* =====================================================
+   SERVICES GRID
+===================================================== */
+
+.services{
+    padding:40px 5% 100px;
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+    max-width:1400px;
+    margin:auto;
+}
+
+
+/* =====================================================
+   SERVICE CARD
+===================================================== */
+
+.service-card{
+    position:relative;
+    min-height:460px;
+    padding:20px;
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-start;
+    align-items:center;
+    text-align:center;
+
+    background:rgba(255,255,255,.05);
+
+    -webkit-backdrop-filter:blur(20px);
+    backdrop-filter:blur(20px);
+
+    border:1px solid rgba(255,255,255,.08);
+    border-radius:22px;
+    overflow:hidden;
+    transition:.4s;
+}
+
+.service-card:hover,
+.service-card:focus-within{
+    transform:translateY(-10px);
+
+    box-shadow:
+    0 20px 50px
+    rgba(0,212,255,.20);
+}
+
+.service-card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+    border-radius:16px;
+    margin-bottom:20px;
+    transition:.4s;
+}
+
+.service-card:hover img{
+    transform:scale(1.04);
+}
+
+.service-icon{
+    width:65px;
+    height:65px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin-top:-50px;
+    margin-bottom:10px;
+    border-radius:50%;
+    font-size:27px;
+
+    background:
+    linear-gradient(
+        135deg,
+        #00d4ff,
+        #7c3aed
+    );
+
+    border:4px solid #101528;
+}
+
+.service-card h3{
+    font-size:22px;
+    margin:10px 0 12px;
+    overflow-wrap:break-word;
+}
+
+.service-card p{
+    color:#a9a9a9;
+    font-size:14px;
+    line-height:1.7;
+    margin-bottom:22px;
+}
+
+.service-btn{
+    margin-top:auto;
+    display:inline-block;
+    padding:11px 24px;
+    border-radius:12px;
+    text-decoration:none;
+    color:white;
+    font-size:14px;
+    font-weight:600;
+
+    background:
+    linear-gradient(
+        135deg,
+        #00d4ff,
+        #7c3aed
+    );
+
+    transition:.3s;
+}
+
+.service-btn:hover{
+    transform:scale(1.05);
+
+    box-shadow:
+    0 8px 25px
+    rgba(0,212,255,.25);
+}
+
+
+/* =====================================================
+   WHY CHOOSE US
+===================================================== */
+
+.why-us{
+    padding:40px 5% 100px;
+    text-align:center;
+}
+
+.why-us h2{
+    font-size:45px;
+    margin-bottom:50px;
+    overflow-wrap:break-word;
+
+    background:
+    linear-gradient(
+        90deg,
+        #ffffff,
+        #00d4ff
+    );
+
+    -webkit-background-clip:text;
+    background-clip:text;
+    -webkit-text-fill-color:transparent;
+    color:transparent;
+}
+
+.why-grid{
+    max-width:1200px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:25px;
+}
+
+.why-card{
+    padding:35px 20px;
+
+    background:rgba(255,255,255,.05);
+
+    -webkit-backdrop-filter:blur(20px);
+    backdrop-filter:blur(20px);
+
+    border:1px solid rgba(255,255,255,.08);
+    border-radius:20px;
+    transition:.3s;
+}
+
+.why-card:hover{
+    transform:translateY(-8px);
+
+    box-shadow:
+    0 15px 35px
+    rgba(0,212,255,.15);
+}
+
+.why-card .icon{
+    font-size:35px;
+    margin-bottom:15px;
+}
+
+.why-card h3{
+    font-size:18px;
+    margin-bottom:8px;
+}
+
+.why-card p{
+    color:#9e9e9e;
+    font-size:13px;
+}
+
+
+/* =====================================================
+   CTA BANNER
+===================================================== */
+
+.banner{
+    width:90%;
+    margin:auto;
+    margin-bottom:90px;
+    padding:70px 30px;
+    text-align:center;
+    border-radius:35px;
+
+    background:
+    linear-gradient(
+        135deg,
+        #00d4ff,
+        #7c3aed
+    );
+}
+
+.banner h2{
+    font-size:48px;
+    margin-bottom:15px;
+    overflow-wrap:break-word;
+}
+
+.banner p{
+    font-size:18px;
+    margin-bottom:28px;
+}
+
+.banner-btn{
+    display:inline-block;
+    padding:15px 35px;
+    background:white;
+    color:#111827;
+    text-decoration:none;
+    border-radius:40px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.banner-btn:hover{
+    transform:translateY(-3px);
+
+    box-shadow:
+    0 10px 30px
+    rgba(0,0,0,.25);
+}
+
+
+/* =====================================================
+   FOOTER (UNIFIED ACROSS ALL PAGES)
+===================================================== */
+
+.site-footer{
+    background:linear-gradient(135deg,#070b18,#0c1224);
+    border-top:1px solid rgba(255,255,255,.10);
+    padding-top:60px;
+    color:white;
+}
+
+.footer-container{
+    width:92%;
+    max-width:1200px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:1.2fr 1fr 1fr;
+    gap:50px;
+    padding-bottom:50px;
+}
+
+.footer-brand h2{
+    font-size:25px;
+    margin-bottom:10px;
+    background:linear-gradient(90deg,#ffffff,#00d4ff);
+    -webkit-background-clip:text;
+    background-clip:text;
+    -webkit-text-fill-color:transparent;
+    color:transparent;
+}
+
+.footer-brand>p{
+    color:#9ca7b8;
+    font-size:14px;
+    line-height:1.7;
+}
+
+.footer-brands{
+    display:flex;
+    flex-wrap:wrap;
+    gap:8px;
+    margin-top:22px;
+}
+
+.footer-brands span{
+    padding:7px 12px;
+    border-radius:8px;
+    font-size:11px;
+    color:#cdd5e1;
+    background:rgba(255,255,255,.05);
+    border:1px solid rgba(255,255,255,.08);
+    transition:.3s;
+}
+
+.footer-brands span:hover{
+    color:#00d4ff;
+    border-color:#00d4ff;
+    transform:translateY(-2px);
+}
+
+.footer-column{
+    display:flex;
+    flex-direction:column;
+    gap:12px;
+}
+
+.footer-column h3{
+    font-size:18px;
+    margin-bottom:8px;
+    color:#fff;
+}
+
+.footer-column a{
+    color:#9ca7b8;
+    text-decoration:none;
+    font-size:13px;
+    line-height:1.7;
+    transition:.3s;
+    overflow-wrap:anywhere;
+}
+
+.footer-column a:hover{
+    color:#00d4ff;
+}
+
+.footer-column p{
+    color:#9ca7b8;
+    font-size:13px;
+    line-height:1.9;
+    margin:0 0 4px;
+    overflow-wrap:anywhere;
+}
+
+.footer-map{
+    display:inline-block;
+    color:#00d4ff!important;
+    margin-top:5px;
+    text-decoration:none;
+}
+
+.footer-bottom{
+    border-top:1px solid rgba(255,255,255,.08);
+    width:92%;
+    max-width:1200px;
+    margin:auto;
+    padding:25px 0;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.footer-bottom p{
+    color:#737d8e;
+    font-size:11px;
+    margin:0;
+}
+
+.footer-bottom a{
+    color:#737d8e;
+    text-decoration:none;
+}
+
+.footer-bottom a:hover{
+    color:#00d4ff;
+}
+
+.footer-bottom strong{
+    color:#00d4ff;
+}
+
+@media(max-width:850px){
+
+    .footer-container{
+        grid-template-columns:1fr 1fr;
+        gap:35px;
+    }
+
+    .footer-brand{
+        grid-column:1 / -1;
+    }
+
+    .footer-bottom{
+        flex-direction:column;
+        text-align:center;
+    }
+}
+
+@media(max-width:600px){
+
+    .site-footer{
+        padding-top:45px;
+    }
+
+    .footer-container{
+        grid-template-columns:1fr;
+        gap:30px;
+    }
+
+    .footer-brand{
+        grid-column:auto;
+    }
+
+    .footer-brand h2{
+        font-size:22px;
+    }
+
+    .footer-bottom{
+        padding:20px 0;
+    }
+}
+
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media(max-width:900px){
+
+    .services{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .why-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .hero-content h1{
+        font-size:55px;
+    }
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media(max-width:600px){
+
+    .services-hero{
+        min-height:450px;
+        padding:80px 20px;
+    }
+
+    .hero-content h1{
+        font-size:42px;
+    }
+
+    .hero-content p{
+        font-size:15px;
+    }
+
+    .intro{
+        padding:70px 20px 35px;
+    }
+
+    .intro h2{
+        font-size:35px;
+    }
+
+    .services{
+        grid-template-columns:1fr;
+        padding:30px 5% 80px;
+    }
+
+    .service-card{
+        min-height:450px;
+    }
+
+    .why-us h2{
+        font-size:35px;
+    }
+
+    .why-grid{
+        grid-template-columns:1fr 1fr;
+        gap:15px;
+    }
+
+    .why-card{
+        padding:25px 10px;
+    }
+
+    .banner{
+        padding:50px 20px;
+    }
+
+    .banner h2{
+        font-size:32px;
+    }
+
+    .banner p{
+        font-size:15px;
+    }
+}
+
+
+/* ===== VERY SMALL PHONES (320-360px safety) ===== */
+
+@media(max-width:360px){
+
+    .hero-content h1{
+        font-size:34px;
+    }
+
+    .intro h2{
+        font-size:29px;
+    }
+
+    .why-us h2{
+        font-size:29px;
+    }
+
+    .banner h2{
+        font-size:27px;
+    }
+
+    .banner{
+        padding:45px 16px;
+    }
+
+    .why-card{
+        padding:22px 8px;
+    }
+}
+
+
+/* =====================================================
+   MOBILE HEADER / HAMBURGER MENU
+===================================================== */
+
+.menu-toggle{
+    display:none;
+    flex-direction:column;
+    justify-content:space-between;
+    width:26px;
+    height:19px;
+    background:none;
+    border:none;
+    cursor:pointer;
+    padding:0;
+    z-index:1200;
+}
+
+.menu-toggle span{
+    display:block;
+    width:100%;
+    height:3px;
+    border-radius:3px;
+    background:#ffffff;
+    transition:.3s ease;
+}
+
+.menu-toggle.active span:nth-child(1){
+    transform:translateY(8px) rotate(45deg);
+}
+
+.menu-toggle.active span:nth-child(2){
+    opacity:0;
+}
+
+.menu-toggle.active span:nth-child(3){
+    transform:translateY(-8px) rotate(-45deg);
+}
+
+@media(max-width:768px){
+
+    header{
+        flex-direction:row;
+        justify-content:space-between;
+        align-items:center;
+        padding:18px 6%;
+        position:sticky;
+    }
+
+    .menu-toggle{
+        display:flex;
+    }
+
+    nav{
+        position:absolute;
+        top:100%;
+        left:0;
+        width:100%;
+        flex-direction:column;
+        align-items:stretch;
+        gap:0;
+        background:rgba(5,8,22,.98);
+        -webkit-backdrop-filter:blur(20px);
+        backdrop-filter:blur(20px);
+        border-bottom:1px solid rgba(255,255,255,.1);
+        max-height:0;
+        overflow:hidden;
+        visibility:hidden;
+        transition:max-height .35s ease, visibility .35s ease;
+    }
+
+    nav.open{
+        max-height:420px;
+        visibility:visible;
+    }
+
+    nav a{
+        padding:16px 0;
+        width:100%;
+        text-align:center;
+        font-size:15px;
+        border-top:1px solid rgba(255,255,255,.06);
+    }
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+<a class="skip-link" href="#main">Skip to main content</a>
+
+
+<!-- =====================================================
+     HEADER
+===================================================== -->
+
+<header>
+
+    <a class="brand" href="index.html" aria-label="M.Tech Ahmedabad - Home">
+        <img class="brand-logo" src="logoo.png" alt="M.Tech Ahmedabad" width="100">
+        <span class="brand-text">M<span>.Tech</span></span>
+    </a>
+
+    <button class="menu-toggle" id="menuToggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mainNav">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+    <nav id="mainNav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="services.html" aria-current="page">Services</a>
+        <a href="contact.html">Contact</a>
+        <a href="about.html">About</a>
+    </nav>
+
+</header>
+
+
+<main id="main">
+
+
+<!-- =====================================================
+     HERO
+===================================================== -->
+
+<section class="services-hero">
+
+    <div class="hero-content">
+
+        <h1>Professional Tech Services</h1>
+
+        <p>
+            From laptop and computer repairs to CCTV,
+            printer services and software solutions &mdash;
+            M.Tech Ahmedabad Computer Store provides reliable
+            technology support for your home and business.
+        </p>
+
+        <a href="#services" class="hero-btn">Explore Our Services</a>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     INTRO
+===================================================== -->
+
+<section class="intro">
+
+    <h2>What We Repair &amp; Service</h2>
+
+    <p>
+        Our experienced technical team helps you keep
+        your technology running smoothly. We provide
+        repair, installation, upgrade and maintenance
+        services for computers, laptops, CCTV systems,
+        printers and other technology products.
+    </p>
+
+</section>
+
+
+<!-- =====================================================
+     SERVICES
+===================================================== -->
+
+<h2 class="sr-only">Our services</h2>
+
+<section class="services" id="services">
+
+
+    <!-- LAPTOP REPAIR -->
+
+    <div class="service-card">
+
+        <img src="https://images.unsplash.com/photo-1588872657578-7efd1f1555ed?w=900" alt="Laptop repair" loading="lazy">
+
+        <div class="service-icon" aria-hidden="true">&#128187;</div>
+
+        <h3>Laptop Repair</h3>
+
+        <p>
+            Complete laptop repair and maintenance
+            including hardware issues, screen problems,
+            keyboard, battery, charging and performance
+            related services.
+        </p>
+
+        <a href="contact.html" class="service-btn">Get Service</a>
+
+    </div>
+
+
+    <!-- DESKTOP REPAIR -->
+
+    <div class="service-card">
+
+        <img src="https://images.unsplash.com/photo-1593640408182-31c70c8268f5?w=900" alt="Desktop computer repair" loading="lazy">
+
+        <div class="service-icon" aria-hidden="true">&#128421;&#65039;</div>
+
+        <h3>Desktop &amp; PC Repair</h3>
+
+        <p>
+            PC and desktop troubleshooting, hardware
+            replacement, component installation,
+            performance issues and general maintenance.
+        </p>
+
+        <a href="contact.html" class="service-btn">Get Service</a>
+
+    </div>
+
+
+    <!-- CCTV -->
+
+    <div class="service-card">
+
+        <img src="https://images.unsplash.com/photo-1557597774-9d273605dfa9?w=900" alt="CCTV installation" loading="lazy">
+
+        <div class="service-icon" aria-hidden="true">&#128249;</div>
+
+        <h3>CCTV Installation &amp; Repair</h3>
+
+        <p>
+            CCTV camera installation, configuration,
+            troubleshooting and maintenance for homes,
+            offices and shops.
+        </p>
+
+        <a href="contact.html" class="service-btn">Get Service</a>
+
+    </div>
+
+
+    <!-- PRINTER -->
+
+    <div class="service-card">
+
+        <img src="https://images.unsplash.com/photo-1612815154858-60aa4c59eaa6?w=900" alt="Printer repair" loading="lazy">
+
+        <div class="service-icon" aria-hidden="true">&#128424;&#65039;</div>
+
+        <h3>Printer Repair</h3>
+
+        <p>
+            Printer troubleshooting, setup,
+            connectivity issues, maintenance and
+            common printing problems.
+        </p>
+
+        <a href="contact.html" class="service-btn">Get Service</a>
+
+    </div>
+
+
+    <!-- UPGRADE -->
+
+    <div class="service-card">
+
+        <img src="https://images.unsplash.com/photo-1597872200969-2b65d56bd16b?w=900" alt="Computer upgrade" loading="lazy">
+
+        <div class="service-icon" aria-hidden="true">&#9889;</div>
+
+        <h3>Laptop &amp; PC Upgrade</h3>
+
+        <p>
+            Upgrade your system with compatible RAM,
+            SSD and other components to improve
+            speed, storage and overall performance.
+        </p>
+
+        <a href="contact.html" class="service-btn">Get Service</a>
+
+    </div>
+
+
+    <!-- SOFTWARE -->
+
+    <div class="service-card">
+
+        <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=900" alt="Software services" loading="lazy">
+
+        <div class="service-icon" aria-hidden="true">&#9881;&#65039;</div>
+
+        <h3>Software &amp; Windows Services</h3>
+
+        <p>
+            Operating system setup, software
+            installation, driver configuration,
+            system troubleshooting and optimization.
+        </p>
+
+        <a href="contact.html" class="service-btn">Get Service</a>
+
+    </div>
+
+
+    <!-- DATA RECOVERY -->
+
+    <div class="service-card">
+
+        <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=900" alt="Data recovery and backup" loading="lazy">
+
+        <div class="service-icon" aria-hidden="true">&#128190;</div>
+
+        <h3>Data Recovery &amp; Backup</h3>
+
+        <p>
+            Assistance with recovering important
+            files and setting up reliable data backup
+            solutions for computers and storage devices.
+        </p>
+
+        <a href="contact.html" class="service-btn">Get Service</a>
+
+    </div>
+
+
+    <!-- ACCESSORIES -->
+
+    <div class="service-card">
+
+        <img src="https://images.unsplash.com/photo-1523206489230-c012c64b2b48?w=900" alt="Computer accessories" loading="lazy">
+
+        <div class="service-icon" aria-hidden="true">&#128268;</div>
+
+        <h3>Accessories &amp; Technical Support</h3>
+
+        <p>
+            Technical assistance with computer
+            accessories, peripherals, connectivity,
+            setup and general technology support.
+        </p>
+
+        <a href="contact.html" class="service-btn">Get Service</a>
+
+    </div>
+
+
+    <!-- VIRUS PROTECTION -->
+
+    <div class="service-card">
+
+        <img src="https://static.vecteezy.com/system/resources/previews/052/402/749/non_2x/system-hacking-with-info-message-background-with-a-code-on-a-blue-background-and-a-virus-warning-cyber-security-and-cybercrime-photo.jpg" alt="Virus protection and computer security" loading="lazy">
+
+        <div class="service-icon" aria-hidden="true">&#128737;&#65039;</div>
+
+        <h3>Virus Protection &amp; Security</h3>
+
+        <p>
+            Our team protects computers from viruses
+            and secures your system with antivirus
+            setup, cleanup and ongoing technical support.
+        </p>
+
+        <a href="contact.html" class="service-btn">Get Service</a>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     WHY CHOOSE US
+===================================================== -->
+
+<section class="why-us">
+
+    <h2>Why Choose M.Tech?</h2>
+
+    <div class="why-grid">
+
+        <div class="why-card">
+            <div class="icon" aria-hidden="true">&#128736;&#65039;</div>
+            <h3>Professional Service</h3>
+            <p>Reliable technical support.</p>
+        </div>
+
+        <div class="why-card">
+            <div class="icon" aria-hidden="true">&#9889;</div>
+            <h3>Quick Support</h3>
+            <p>Fast troubleshooting and assistance.</p>
+        </div>
+
+        <div class="why-card">
+            <div class="icon" aria-hidden="true">&#128187;</div>
+            <h3>Multi-Device</h3>
+            <p>Support for multiple technology products.</p>
+        </div>
+
+        <div class="why-card">
+            <div class="icon" aria-hidden="true">&#129309;</div>
+            <h3>Customer Focused</h3>
+            <p>Solutions designed around your needs.</p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     CTA
+===================================================== -->
+
+<section class="banner">
+
+    <h2>Need Technical Help?</h2>
+
+    <p>
+        Let M.Tech Ahmedabad Computer Store take care of
+        your technology problems.
+    </p>
+
+    <a href="contact.html" class="banner-btn">Contact Us</a>
+
+</section>
+
+</main>
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer class="site-footer">
+
+<div class="footer-container">
+
+<div class="footer-brand">
+
+<h2>M.Tech Ahmedabad</h2>
+
+<p>
+Laptops, desktops, CCTV, printers, networking and
+accessories with reliable technical support in Ahmedabad.
+</p>
+
+<div class="footer-brands">
+<span>Laptops</span>
+<span>Desktops</span>
+<span>CCTV</span>
+<span>Printers</span>
+<span>Networking</span>
+<span>Accessories</span>
+</div>
+
+</div>
+
+<div class="footer-column">
+
+<h3>Quick Links</h3>
+
+<a href="index.html">Home</a>
+<a href="products.html">Products</a>
+<a href="services.html">Services</a>
+<a href="contact.html">Contact</a>
+<a href="about.html">About</a>
+
+</div>
+
+<div class="footer-column">
+
+<h3>Contact</h3>
+
+<!-- TODO: add the full street address + PIN code here once confirmed. -->
+
+<a href="tel:+917383037521">&#128222; +91 73830 37521</a>
+<a href="mailto:info@mtechahmedabad.com">&#9993;&#65039; info@mtechahmedabad.com</a>
+<a href="https://wa.me/917383037521" target="_blank" rel="noopener noreferrer">&#128172; WhatsApp</a>
+<a href="https://instagram.com/mtechahmedabad" target="_blank" rel="noopener noreferrer">&#128247; Instagram</a>
+
+<a class="footer-map" href="https://maps.app.goo.gl/6pT45zfBXSbPrRMz9" target="_blank" rel="noopener noreferrer">
+&#128205; Get Directions
+</a>
+
+</div>
+
+</div>
+
+<div class="footer-bottom">
+
+<p>&copy; 2026 <strong>M.Tech</strong> Ahmedabad Computer Store</p>
+
+<p>
+<a href="tel:+917383037521">&#128222; +91 73830 37521</a>
+&nbsp;|&nbsp;
+<a href="mailto:info@mtechahmedabad.com">&#9993;&#65039; info@mtechahmedabad.com</a>
+</p>
+
+</div>
+
+</footer>
+
+
+<!-- ===================== SCRIPTS ===================== -->
+
+<script src="assets/menu.js"></script>
+
+</body>
+</html>

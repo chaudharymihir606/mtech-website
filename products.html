@@ -1,0 +1,1571 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<!-- ===================== BASICS ===================== -->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- ===================== SECURITY ===================== -->
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' https: data:; connect-src 'none'; form-action 'none'; base-uri 'none'; object-src 'none'; frame-src 'none'; upgrade-insecure-requests">
+
+<!-- ===================== SEO ===================== -->
+<title>Products | M.Tech Ahmedabad</title>
+
+<meta name="description" content="Browse laptops, desktops, gaming PCs, CCTV kits, printers and accessories available at M.Tech Ahmedabad Computer Store.">
+
+<link rel="canonical" href="https://www.mtechahmedabad.com/products.html">
+
+<meta name="theme-color" content="#050816">
+<meta name="robots" content="index, follow">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="M.Tech Ahmedabad">
+<meta property="og:title" content="Products | M.Tech Ahmedabad">
+<meta property="og:description" content="Laptops, desktops, gaming PCs, CCTV kits, printers and accessories at M.Tech Ahmedabad.">
+<meta property="og:url" content="https://www.mtechahmedabad.com/products.html">
+<meta property="og:image" content="https://www.mtechahmedabad.com/logoo.png">
+<meta name="twitter:card" content="summary">
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23050816'/%3E%3Ctext x='16' y='23' font-family='Arial,Helvetica,sans-serif' font-size='19' font-weight='bold' fill='%2300d4ff' text-anchor='middle'%3EM%3C/text%3E%3C/svg%3E">
+
+<!-- ===================== FONTS ===================== -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+/* =====================================================
+   GLOBAL
+===================================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#050816;
+    color:white;
+    overflow-x:hidden;
+}
+
+img{
+    max-width:100%;
+}
+
+
+/* =====================================================
+   ACCESSIBILITY HELPERS
+===================================================== */
+
+.skip-link{
+    position:absolute;
+    left:-9999px;
+    top:0;
+    z-index:2000;
+    padding:12px 18px;
+    border-radius:0 0 10px 0;
+    background:#00d4ff;
+    color:#050816;
+    font-weight:700;
+    text-decoration:none;
+}
+
+.skip-link:focus{
+    left:0;
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible{
+    outline:3px solid #00d4ff;
+    outline-offset:3px;
+    border-radius:6px;
+}
+
+.sr-only{
+    position:absolute;
+    width:1px;
+    height:1px;
+    padding:0;
+    margin:-1px;
+    overflow:hidden;
+    clip:rect(0,0,0,0);
+    white-space:nowrap;
+    border:0;
+}
+
+@media(prefers-reduced-motion:reduce){
+
+    html{
+        scroll-behavior:auto;
+    }
+
+    *,
+    *::before,
+    *::after{
+        animation-duration:.001ms!important;
+        animation-iteration-count:1!important;
+        transition-duration:.001ms!important;
+        scroll-behavior:auto!important;
+    }
+}
+
+
+/* =====================================================
+   BACKGROUND GLOW
+===================================================== */
+
+body::before{
+    content:"";
+    position:fixed;
+    top:-200px;
+    left:-200px;
+    width:500px;
+    height:500px;
+    background:#00bfff30;
+    filter:blur(180px);
+    z-index:-1;
+    pointer-events:none;
+}
+
+body::after{
+    content:"";
+    position:fixed;
+    bottom:-200px;
+    right:-200px;
+    width:500px;
+    height:500px;
+    background:#7c3aed40;
+    filter:blur(180px);
+    z-index:-1;
+    pointer-events:none;
+}
+
+
+/* =====================================================
+   HEADER
+===================================================== */
+
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:22px 8%;
+    background:rgba(255,255,255,0.05);
+    -webkit-backdrop-filter:blur(20px);
+    backdrop-filter:blur(20px);
+    border-bottom:1px solid rgba(255,255,255,0.1);
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+.brand{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    flex-shrink:0;
+    color:white;
+    text-decoration:none;
+}
+
+.brand-logo{
+    display:block;
+    width:100px;
+    height:auto;
+    max-width:40vw;
+}
+
+.brand-text{
+    display:none;
+    font-size:26px;
+    font-weight:700;
+    color:white;
+    white-space:nowrap;
+}
+
+.brand-text span{
+    color:#00d4ff;
+}
+
+html.no-logo .brand-logo{
+    display:none;
+}
+
+html.no-logo .brand-text{
+    display:inline-block;
+}
+
+nav{
+    display:flex;
+    gap:25px;
+}
+
+nav a{
+    color:#ddd;
+    text-decoration:none;
+    font-weight:500;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:#00d4ff;
+}
+
+nav a[aria-current="page"]{
+    color:#00d4ff;
+}
+
+
+/* =====================================================
+   HERO
+===================================================== */
+
+.hero{
+    padding:90px 8% 50px;
+    text-align:center;
+}
+
+.hero h1{
+    font-size:65px;
+    line-height:1.1;
+    overflow-wrap:break-word;
+    background:linear-gradient(90deg,#ffffff,#00d4ff);
+    -webkit-background-clip:text;
+    background-clip:text;
+    -webkit-text-fill-color:transparent;
+    color:transparent;
+}
+
+.hero p{
+    max-width:700px;
+    margin:20px auto;
+    color:#aaa;
+    font-size:18px;
+    line-height:1.7;
+}
+
+
+/* =====================================================
+   SEARCH
+===================================================== */
+
+.search-box{
+    max-width:700px;
+    margin:35px auto;
+}
+
+.search-box input{
+    width:100%;
+    padding:18px 25px;
+    border-radius:20px;
+    border:1px solid rgba(255,255,255,0.1);
+    outline:none;
+    background:rgba(255,255,255,0.07);
+    color:white;
+    font-size:16px;
+}
+
+.search-box input::placeholder{
+    color:#aaa;
+}
+
+
+/* =====================================================
+   FILTER BUTTONS
+===================================================== */
+
+.filters{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-wrap:wrap;
+    gap:15px;
+    margin:20px auto 50px;
+    width:90%;
+}
+
+.filter-btn{
+    padding:13px 24px;
+    border-radius:30px;
+    border:1px solid rgba(255,255,255,0.12);
+    background:rgba(255,255,255,0.06);
+    color:white;
+    cursor:pointer;
+    font-size:15px;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.filter-btn:hover{
+    background:#00d4ff;
+    color:#000;
+    transform:translateY(-3px);
+}
+
+.filter-btn.active{
+    background:#00d4ff;
+    color:#000;
+}
+
+
+/* =====================================================
+   PRODUCTS
+===================================================== */
+
+.products{
+    width:90%;
+    margin:auto;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
+    padding-bottom:100px;
+}
+
+.card{
+    background:rgba(255,255,255,0.05);
+    -webkit-backdrop-filter:blur(20px);
+    backdrop-filter:blur(20px);
+    border:1px solid rgba(255,255,255,0.1);
+    border-radius:25px;
+    overflow:hidden;
+    position:relative;
+    transition:0.4s;
+}
+
+.card:hover,
+.card:focus-within{
+    transform:translateY(-10px);
+    box-shadow:0 20px 50px rgba(0,212,255,0.2);
+}
+
+.card.hide{
+    display:none;
+}
+
+.badge{
+    position:absolute;
+    top:15px;
+    left:15px;
+    z-index:2;
+    background:#00d4ff;
+    color:#000;
+    padding:7px 13px;
+    border-radius:30px;
+    font-size:12px;
+    font-weight:bold;
+}
+
+.card-image{
+    width:100%;
+    height:230px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:linear-gradient(135deg,#101d42,#07101f);
+    overflow:hidden;
+}
+
+.card-image img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+.card-content{
+    padding:22px;
+}
+
+.category{
+    color:#00d4ff;
+    font-size:14px;
+    margin-bottom:8px;
+    font-weight:bold;
+}
+
+.card h3{
+    font-size:23px;
+    margin-bottom:10px;
+    overflow-wrap:break-word;
+}
+
+.description{
+    color:#aaa;
+    font-size:14px;
+    line-height:1.6;
+    margin-bottom:20px;
+}
+
+.bottom{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    flex-wrap:wrap;
+    gap:10px;
+}
+
+.price{
+    font-size:22px;
+    font-weight:bold;
+}
+
+.btn{
+    display:inline-block;
+    padding:10px 18px;
+    border:none;
+    border-radius:12px;
+    background:linear-gradient(135deg,#00d4ff,#7c3aed);
+    color:white;
+    cursor:pointer;
+    font-weight:bold;
+    text-decoration:none;
+    font-size:15px;
+    transition:.3s;
+    white-space:nowrap;
+}
+
+.btn:hover{
+    transform:scale(1.05);
+    box-shadow:0 8px 25px rgba(0,212,255,0.25);
+}
+
+
+/* =====================================================
+   NO PRODUCTS
+===================================================== */
+
+.no-products{
+    display:none;
+    text-align:center;
+    color:#aaa;
+    font-size:18px;
+    padding:50px 20px;
+    grid-column:1/-1;
+}
+
+
+/* =====================================================
+   BANNER
+===================================================== */
+
+.banner{
+    width:90%;
+    margin:0 auto 100px;
+    padding:70px 30px;
+    border-radius:35px;
+    background:linear-gradient(135deg,#00d4ff,#7c3aed);
+    text-align:center;
+}
+
+.banner h2{
+    font-size:45px;
+    margin-bottom:15px;
+}
+
+.banner p{
+    margin-bottom:25px;
+}
+
+.banner button{
+    padding:14px 30px;
+    border:none;
+    border-radius:30px;
+    font-weight:bold;
+    cursor:pointer;
+    background:#ffffff;
+    color:#111827;
+    transition:.3s;
+}
+
+.banner button:hover{
+    transform:translateY(-3px);
+    box-shadow:0 10px 30px rgba(0,0,0,.25);
+}
+
+
+/* =====================================================
+   ABOUT
+===================================================== */
+
+.about{
+    width:90%;
+    max-width:1000px;
+    margin:0 auto 100px;
+    text-align:center;
+}
+
+.about h2{
+    font-size:40px;
+    margin-bottom:20px;
+}
+
+.about p{
+    color:#aaa;
+    line-height:1.8;
+}
+
+
+/* =====================================================
+   SERVICES
+===================================================== */
+
+.services{
+    width:90%;
+    margin:auto;
+    padding-bottom:100px;
+}
+
+.services h2{
+    text-align:center;
+    font-size:40px;
+    margin-bottom:40px;
+}
+
+.service-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+}
+
+.service-box{
+    padding:30px;
+    background:rgba(255,255,255,0.05);
+    border:1px solid rgba(255,255,255,0.1);
+    border-radius:20px;
+    text-align:center;
+}
+
+.service-box h3{
+    color:#00d4ff;
+    margin-bottom:10px;
+}
+
+.service-box p{
+    color:#aaa;
+    line-height:1.6;
+}
+
+.services-more{
+    text-align:center;
+    margin-top:30px;
+}
+
+.services-more a{
+    color:#00d4ff;
+    font-weight:600;
+    text-decoration:none;
+}
+
+.services-more a:hover{
+    text-decoration:underline;
+}
+
+
+/* =====================================================
+   CONTACT
+===================================================== */
+
+.contact{
+    width:90%;
+    max-width:800px;
+    margin:0 auto 100px;
+    text-align:center;
+}
+
+.contact h2{
+    font-size:40px;
+    margin-bottom:20px;
+}
+
+.contact p{
+    color:#aaa;
+    line-height:1.8;
+}
+
+.contact a{
+    color:#00d4ff;
+    text-decoration:none;
+}
+
+.contact a:hover{
+    text-decoration:underline;
+}
+
+
+/* =====================================================
+   FOOTER (UNIFIED ACROSS ALL PAGES)
+===================================================== */
+
+.site-footer{
+    background:linear-gradient(135deg,#070b18,#0c1224);
+    border-top:1px solid rgba(255,255,255,.10);
+    padding-top:60px;
+    color:white;
+}
+
+.footer-container{
+    width:92%;
+    max-width:1200px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:1.2fr 1fr 1fr;
+    gap:50px;
+    padding-bottom:50px;
+}
+
+.footer-brand h2{
+    font-size:25px;
+    margin-bottom:10px;
+    background:linear-gradient(90deg,#ffffff,#00d4ff);
+    -webkit-background-clip:text;
+    background-clip:text;
+    -webkit-text-fill-color:transparent;
+    color:transparent;
+}
+
+.footer-brand>p{
+    color:#9ca7b8;
+    font-size:14px;
+    line-height:1.7;
+}
+
+.footer-brands{
+    display:flex;
+    flex-wrap:wrap;
+    gap:8px;
+    margin-top:22px;
+}
+
+.footer-brands span{
+    padding:7px 12px;
+    border-radius:8px;
+    font-size:11px;
+    color:#cdd5e1;
+    background:rgba(255,255,255,.05);
+    border:1px solid rgba(255,255,255,.08);
+    transition:.3s;
+}
+
+.footer-brands span:hover{
+    color:#00d4ff;
+    border-color:#00d4ff;
+    transform:translateY(-2px);
+}
+
+.footer-column{
+    display:flex;
+    flex-direction:column;
+    gap:12px;
+}
+
+.footer-column h3{
+    font-size:18px;
+    margin-bottom:8px;
+    color:#fff;
+}
+
+.footer-column a{
+    color:#9ca7b8;
+    text-decoration:none;
+    font-size:13px;
+    line-height:1.7;
+    transition:.3s;
+    overflow-wrap:anywhere;
+}
+
+.footer-column a:hover{
+    color:#00d4ff;
+}
+
+.footer-column p{
+    color:#9ca7b8;
+    font-size:13px;
+    line-height:1.9;
+    margin:0 0 4px;
+    overflow-wrap:anywhere;
+}
+
+.footer-map{
+    display:inline-block;
+    color:#00d4ff!important;
+    margin-top:5px;
+    text-decoration:none;
+}
+
+.footer-bottom{
+    border-top:1px solid rgba(255,255,255,.08);
+    width:92%;
+    max-width:1200px;
+    margin:auto;
+    padding:25px 0;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.footer-bottom p{
+    color:#737d8e;
+    font-size:11px;
+    margin:0;
+}
+
+.footer-bottom a{
+    color:#737d8e;
+    text-decoration:none;
+}
+
+.footer-bottom a:hover{
+    color:#00d4ff;
+}
+
+.footer-bottom strong{
+    color:#00d4ff;
+}
+
+@media(max-width:850px){
+
+    .footer-container{
+        grid-template-columns:1fr 1fr;
+        gap:35px;
+    }
+
+    .footer-brand{
+        grid-column:1 / -1;
+    }
+
+    .footer-bottom{
+        flex-direction:column;
+        text-align:center;
+    }
+}
+
+@media(max-width:600px){
+
+    .site-footer{
+        padding-top:45px;
+    }
+
+    .footer-container{
+        grid-template-columns:1fr;
+        gap:30px;
+    }
+
+    .footer-brand{
+        grid-column:auto;
+    }
+
+    .footer-brand h2{
+        font-size:22px;
+    }
+
+    .footer-bottom{
+        padding:20px 0;
+    }
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media(max-width:768px){
+
+    .hero{
+        padding-top:60px;
+    }
+
+    .hero h1{
+        font-size:43px;
+    }
+
+    .hero p{
+        font-size:15px;
+    }
+
+    .banner h2{
+        font-size:32px;
+    }
+
+    .about h2,
+    .services h2,
+    .contact h2{
+        font-size:31px;
+    }
+}
+
+
+/* ===== VERY SMALL PHONES (320-360px safety) ===== */
+
+@media(max-width:360px){
+
+    .hero h1{
+        font-size:34px;
+    }
+
+    .banner{
+        padding:50px 18px;
+    }
+
+    .banner h2{
+        font-size:27px;
+    }
+
+    .filter-btn{
+        padding:11px 17px;
+        font-size:14px;
+    }
+
+    .search-box input{
+        padding:15px 18px;
+        font-size:15px;
+    }
+
+    .card h3{
+        font-size:21px;
+    }
+
+    .price{
+        font-size:20px;
+    }
+
+    .about h2,
+    .services h2,
+    .contact h2{
+        font-size:27px;
+    }
+}
+
+
+/* =====================================================
+   MOBILE HEADER / HAMBURGER MENU
+===================================================== */
+
+.menu-toggle{
+    display:none;
+    flex-direction:column;
+    justify-content:space-between;
+    width:26px;
+    height:19px;
+    background:none;
+    border:none;
+    cursor:pointer;
+    padding:0;
+    z-index:1200;
+}
+
+.menu-toggle span{
+    display:block;
+    width:100%;
+    height:3px;
+    border-radius:3px;
+    background:#ffffff;
+    transition:.3s ease;
+}
+
+.menu-toggle.active span:nth-child(1){
+    transform:translateY(8px) rotate(45deg);
+}
+
+.menu-toggle.active span:nth-child(2){
+    opacity:0;
+}
+
+.menu-toggle.active span:nth-child(3){
+    transform:translateY(-8px) rotate(-45deg);
+}
+
+@media(max-width:768px){
+
+    header{
+        flex-direction:row;
+        justify-content:space-between;
+        align-items:center;
+        padding:18px 6%;
+        position:sticky;
+    }
+
+    .menu-toggle{
+        display:flex;
+    }
+
+    nav{
+        position:absolute;
+        top:100%;
+        left:0;
+        width:100%;
+        flex-direction:column;
+        align-items:stretch;
+        gap:0;
+        background:rgba(5,8,22,.98);
+        -webkit-backdrop-filter:blur(20px);
+        backdrop-filter:blur(20px);
+        border-bottom:1px solid rgba(255,255,255,.1);
+        max-height:0;
+        overflow:hidden;
+        visibility:hidden;
+        transition:max-height .35s ease, visibility .35s ease;
+    }
+
+    nav.open{
+        max-height:420px;
+        visibility:visible;
+    }
+
+    nav a{
+        padding:16px 0;
+        width:100%;
+        text-align:center;
+        font-size:15px;
+        border-top:1px solid rgba(255,255,255,.06);
+    }
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+<a class="skip-link" href="#main">Skip to main content</a>
+
+
+<!-- =====================================================
+     HEADER
+===================================================== -->
+
+<header>
+
+    <a class="brand" href="index.html" aria-label="M.Tech Ahmedabad - Home">
+        <img class="brand-logo" src="logoo.png" alt="M.Tech Ahmedabad" width="100">
+        <span class="brand-text">M<span>.Tech</span></span>
+    </a>
+
+    <button class="menu-toggle" id="menuToggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mainNav">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+    <nav id="mainNav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="products.html" aria-current="page">Products</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
+        <a href="about.html">About</a>
+    </nav>
+
+</header>
+
+
+<main id="main">
+
+
+<!-- =====================================================
+     HERO
+===================================================== -->
+
+<section class="hero" id="home">
+
+    <h1>Premium Tech Collection</h1>
+
+    <p>
+        Discover top-quality laptops, gaming PCs, CCTV solutions,
+        printers, networking devices and accessories curated for
+        performance and reliability.
+    </p>
+
+    <div class="search-box">
+        <label class="sr-only" for="searchInput">Search products</label>
+        <input type="search" id="searchInput" maxlength="60" autocomplete="off" placeholder="Search products...">
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     FILTER BUTTONS
+===================================================== -->
+
+<div class="filters" role="group" aria-label="Filter products by category">
+
+    <button class="filter-btn active" type="button" data-category="all" aria-pressed="true">All</button>
+    <button class="filter-btn" type="button" data-category="laptop" aria-pressed="false">Laptops</button>
+    <button class="filter-btn" type="button" data-category="desktop" aria-pressed="false">Desktops</button>
+    <button class="filter-btn" type="button" data-category="cctv" aria-pressed="false">CCTV</button>
+    <button class="filter-btn" type="button" data-category="printer" aria-pressed="false">Printers</button>
+    <button class="filter-btn" type="button" data-category="accessory" aria-pressed="false">Accessories</button>
+
+</div>
+
+
+<!-- =====================================================
+     PRODUCTS
+===================================================== -->
+
+<h2 class="sr-only">Our products</h2>
+
+<section class="products" id="products" aria-live="polite">
+
+
+    <!-- PRODUCT 1 -->
+
+    <div class="card" data-category="laptop" data-name="ASUS ROG Strix" data-keywords="gaming laptop asus rog strix rtx ssd">
+
+        <span class="badge">BEST SELLER</span>
+
+        <div class="card-image">
+            <img src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="ASUS ROG Strix gaming laptop" loading="lazy">
+        </div>
+
+        <div class="card-content">
+
+            <div class="category">Gaming Laptop</div>
+
+            <h3>ASUS ROG Strix</h3>
+
+            <p class="description">
+                High-performance laptop with RTX graphics
+                and ultra-fast SSD.
+            </p>
+
+            <div class="bottom">
+                <div class="price">&#8377;89,999</div>
+                <a class="btn" href="https://wa.me/917383037521?text=Hi%20M.Tech%2C%20I%20am%20interested%20in%20ASUS%20ROG%20Strix%20(%E2%82%B989%2C999).%20Please%20share%20details." target="_blank" rel="noopener noreferrer" aria-label="Enquire about ASUS ROG Strix on WhatsApp">Enquire</a>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- PRODUCT 2 -->
+
+    <div class="card" data-category="laptop" data-name="Dell Inspiron" data-keywords="business laptop dell inspiron study office">
+
+        <span class="badge">NEW</span>
+
+        <div class="card-image">
+            <img src="https://images.unsplash.com/photo-1603302576837-37561b2e2302?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Dell Inspiron laptop" loading="lazy">
+        </div>
+
+        <div class="card-content">
+
+            <div class="category">Business Laptop</div>
+
+            <h3>Dell Inspiron</h3>
+
+            <p class="description">
+                Reliable laptop for business, study
+                and everyday work.
+            </p>
+
+            <div class="bottom">
+                <div class="price">&#8377;59,999</div>
+                <a class="btn" href="https://wa.me/917383037521?text=Hi%20M.Tech%2C%20I%20am%20interested%20in%20Dell%20Inspiron%20(%E2%82%B959%2C999).%20Please%20share%20details." target="_blank" rel="noopener noreferrer" aria-label="Enquire about Dell Inspiron on WhatsApp">Enquire</a>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- PRODUCT 3 -->
+
+    <div class="card" data-category="desktop" data-name="Business Workstation" data-keywords="desktop workstation office professional pc">
+
+        <span class="badge">NEW</span>
+
+        <div class="card-image">
+            <img src="https://rottenpanda.com/wp-content/uploads/2026/01/top_1500_business_laptops_tn2yk.jpg" alt="Business workstation desktop" loading="lazy">
+        </div>
+
+        <div class="card-content">
+
+            <div class="category">Desktop</div>
+
+            <h3>Business Workstation</h3>
+
+            <p class="description">
+                Powerful desktop solution for professionals
+                and offices.
+            </p>
+
+            <div class="bottom">
+                <div class="price">&#8377;55,999</div>
+                <a class="btn" href="https://wa.me/917383037521?text=Hi%20M.Tech%2C%20I%20am%20interested%20in%20Business%20Workstation%20(%E2%82%B955%2C999).%20Please%20share%20details." target="_blank" rel="noopener noreferrer" aria-label="Enquire about Business Workstation on WhatsApp">Enquire</a>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- PRODUCT 4 -->
+
+    <div class="card" data-category="desktop" data-name="Gaming PC Pro" data-keywords="gaming desktop pc graphics high end">
+
+        <div class="card-image">
+            <img src="https://images.unsplash.com/photo-1547082299-de196ea013d6?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Gaming desktop PC" loading="lazy">
+        </div>
+
+        <div class="card-content">
+
+            <div class="category">Gaming Desktop</div>
+
+            <h3>Gaming PC Pro</h3>
+
+            <p class="description">
+                Powerful gaming computer with high-end
+                graphics and fast performance.
+            </p>
+
+            <div class="bottom">
+                <div class="price">&#8377;99,999</div>
+                <a class="btn" href="https://wa.me/917383037521?text=Hi%20M.Tech%2C%20I%20am%20interested%20in%20Gaming%20PC%20Pro%20(%E2%82%B999%2C999).%20Please%20share%20details." target="_blank" rel="noopener noreferrer" aria-label="Enquire about Gaming PC Pro on WhatsApp">Enquire</a>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- PRODUCT 5 -->
+
+    <div class="card" data-category="cctv" data-name="CCTV Kit 4MP" data-keywords="security cctv kit surveillance camera home business">
+
+        <span class="badge">HOT</span>
+
+        <div class="card-image">
+            <img src="https://images.unsplash.com/photo-1557597774-9d273605dfa9?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="CCTV surveillance kit" loading="lazy">
+        </div>
+
+        <div class="card-content">
+
+            <div class="category">Security</div>
+
+            <h3>CCTV Kit 4MP</h3>
+
+            <p class="description">
+                Complete surveillance setup for home
+                and business security.
+            </p>
+
+            <div class="bottom">
+                <div class="price">&#8377;18,999</div>
+                <a class="btn" href="https://wa.me/917383037521?text=Hi%20M.Tech%2C%20I%20am%20interested%20in%20CCTV%20Kit%204MP%20(%E2%82%B918%2C999).%20Please%20share%20details." target="_blank" rel="noopener noreferrer" aria-label="Enquire about CCTV Kit 4MP on WhatsApp">Enquire</a>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- PRODUCT 6 -->
+
+    <div class="card" data-category="cctv" data-name="IP CCTV Camera" data-keywords="security camera ip cctv indoor outdoor monitoring">
+
+        <div class="card-image">
+            <img src="https://th.bing.com/th/id/R.6bbf37f2c68b11316f34902e2bf12f7e?rik=zOIhEh7S5B0tiw&amp;riu=http%3a%2f%2fcdn.shopify.com%2fs%2ffiles%2f1%2f0573%2f4573%2f6890%2fcollections%2fip-cctv-kit.jpg%3fv%3d1623939180&amp;ehk=mXgl7ePevb7lEFMwB27uuFAo35aLtOlp6ycy%2fkBH%2bH0%3d&amp;risl=&amp;pid=ImgRaw&amp;r=0" alt="IP security camera" loading="lazy">
+        </div>
+
+        <div class="card-content">
+
+            <div class="category">Security Camera</div>
+
+            <h3>IP CCTV Camera</h3>
+
+            <p class="description">
+                High-quality IP camera for reliable
+                indoor and outdoor monitoring.
+            </p>
+
+            <div class="bottom">
+                <div class="price">&#8377;7,999</div>
+                <a class="btn" href="https://wa.me/917383037521?text=Hi%20M.Tech%2C%20I%20am%20interested%20in%20IP%20CCTV%20Camera%20(%E2%82%B97%2C999).%20Please%20share%20details." target="_blank" rel="noopener noreferrer" aria-label="Enquire about IP CCTV Camera on WhatsApp">Enquire</a>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- PRODUCT 7 -->
+
+    <div class="card" data-category="printer" data-name="HP LaserJet" data-keywords="printer hp laserjet fast professional printing">
+
+        <div class="card-image">
+            <img src="https://images.unsplash.com/photo-1612815154858-60aa4c59eaa6?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="HP LaserJet printer" loading="lazy">
+        </div>
+
+        <div class="card-content">
+
+            <div class="category">Printer</div>
+
+            <h3>HP LaserJet</h3>
+
+            <p class="description">
+                Fast printing with professional quality
+                output.
+            </p>
+
+            <div class="bottom">
+                <div class="price">&#8377;14,999</div>
+                <a class="btn" href="https://wa.me/917383037521?text=Hi%20M.Tech%2C%20I%20am%20interested%20in%20HP%20LaserJet%20(%E2%82%B914%2C999).%20Please%20share%20details." target="_blank" rel="noopener noreferrer" aria-label="Enquire about HP LaserJet on WhatsApp">Enquire</a>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- PRODUCT 8 -->
+
+    <div class="card" data-category="printer" data-name="Canon Printer" data-keywords="printer canon colour color document home office">
+
+        <div class="card-image">
+            <img src="https://alaneesqatar.qa/wp-content/uploads/2020/06/Canon-PIXMA-G6040-Printer-3.png" alt="Canon printer" loading="lazy">
+        </div>
+
+        <div class="card-content">
+
+            <div class="category">Printer</div>
+
+            <h3>Canon Printer</h3>
+
+            <p class="description">
+                Efficient colour and document printing
+                for home and office.
+            </p>
+
+            <div class="bottom">
+                <div class="price">&#8377;12,999</div>
+                <a class="btn" href="https://wa.me/917383037521?text=Hi%20M.Tech%2C%20I%20am%20interested%20in%20Canon%20Printer%20(%E2%82%B912%2C999).%20Please%20share%20details." target="_blank" rel="noopener noreferrer" aria-label="Enquire about Canon Printer on WhatsApp">Enquire</a>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- PRODUCT 9 -->
+
+    <div class="card" data-category="printer" data-name="Brother Printer" data-keywords="printer brother compact reliable office">
+
+        <div class="card-image">
+            <img src="https://www.brother.com.au/-/media/ap2/global/menu/printers-listing-page-banners-refurb-printers-mobile.jpg?rev=68df84e587254d55b7210b29ad81a190" alt="Brother printer" loading="lazy">
+        </div>
+
+        <div class="card-content">
+
+            <div class="category">Printer</div>
+
+            <h3>Brother Printer</h3>
+
+            <p class="description">
+                Compact and reliable printer for
+                everyday office requirements.
+            </p>
+
+            <div class="bottom">
+                <div class="price">&#8377;16,999</div>
+                <a class="btn" href="https://wa.me/917383037521?text=Hi%20M.Tech%2C%20I%20am%20interested%20in%20Brother%20Printer%20(%E2%82%B916%2C999).%20Please%20share%20details." target="_blank" rel="noopener noreferrer" aria-label="Enquire about Brother Printer on WhatsApp">Enquire</a>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- PRODUCT 10 -->
+
+    <div class="card" data-category="accessory" data-name="Wireless Mouse" data-keywords="accessories wireless mouse computing">
+
+        <div class="card-image">
+            <img src="https://images.unsplash.com/photo-1527864550417-7fd91fc51a46?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Wireless computer mouse" loading="lazy">
+        </div>
+
+        <div class="card-content">
+
+            <div class="category">Accessories</div>
+
+            <h3>Wireless Mouse</h3>
+
+            <p class="description">
+                Smooth and comfortable wireless mouse
+                for everyday computing.
+            </p>
+
+            <div class="bottom">
+                <div class="price">&#8377;999</div>
+                <a class="btn" href="https://wa.me/917383037521?text=Hi%20M.Tech%2C%20I%20am%20interested%20in%20Wireless%20Mouse%20(%E2%82%B9999).%20Please%20share%20details." target="_blank" rel="noopener noreferrer" aria-label="Enquire about Wireless Mouse on WhatsApp">Enquire</a>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- PRODUCT 11 -->
+
+    <div class="card" data-category="accessory" data-name="Mechanical Keyboard" data-keywords="accessories mechanical keyboard gaming typing">
+
+        <div class="card-image">
+            <img src="https://images.unsplash.com/photo-1587829741301-dc798b83add3?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Mechanical keyboard" loading="lazy">
+        </div>
+
+        <div class="card-content">
+
+            <div class="category">Accessories</div>
+
+            <h3>Mechanical Keyboard</h3>
+
+            <p class="description">
+                Premium mechanical keyboard for gaming
+                and professional work.
+            </p>
+
+            <div class="bottom">
+                <div class="price">&#8377;2,499</div>
+                <a class="btn" href="https://wa.me/917383037521?text=Hi%20M.Tech%2C%20I%20am%20interested%20in%20Mechanical%20Keyboard%20(%E2%82%B92%2C499).%20Please%20share%20details." target="_blank" rel="noopener noreferrer" aria-label="Enquire about Mechanical Keyboard on WhatsApp">Enquire</a>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- PRODUCT 12 -->
+
+    <div class="card" data-category="accessory" data-name="Gaming Headset" data-keywords="accessories gaming headset headphones sound audio">
+
+        <div class="card-image">
+            <img src="https://i.pinimg.com/736x/1e/9e/22/1e9e22f450dcbaa39d26318a777f6004.jpg" alt="Gaming headset" loading="lazy">
+        </div>
+
+        <div class="card-content">
+
+            <div class="category">Accessories</div>
+
+            <h3>Gaming Headset</h3>
+
+            <p class="description">
+                Immersive sound and comfortable design
+                for gaming and entertainment.
+            </p>
+
+            <div class="bottom">
+                <div class="price">&#8377;3,499</div>
+                <a class="btn" href="https://wa.me/917383037521?text=Hi%20M.Tech%2C%20I%20am%20interested%20in%20Gaming%20Headset%20(%E2%82%B93%2C499).%20Please%20share%20details." target="_blank" rel="noopener noreferrer" aria-label="Enquire about Gaming Headset on WhatsApp">Enquire</a>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- NO PRODUCTS -->
+
+    <div class="no-products" id="noProducts">
+        No products found. Try a different search or category.
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     BANNER
+===================================================== -->
+
+<section class="banner">
+
+    <h2>Build Your Dream Setup</h2>
+
+    <p>
+        From gaming rigs to office workstations,
+        find everything you need.
+    </p>
+
+    <button type="button" id="exploreAll">Explore Collection</button>
+
+</section>
+
+
+<!-- =====================================================
+     ABOUT
+===================================================== -->
+
+<section class="about" id="about">
+
+    <h2>About M.Tech</h2>
+
+    <p>
+        M.Tech is a computer and technology store in Ahmedabad,
+        providing laptops, desktops, CCTV systems, printers,
+        accessories and technology solutions for homes and businesses.
+    </p>
+
+</section>
+
+
+<!-- =====================================================
+     SERVICES
+===================================================== -->
+
+<section class="services" id="services">
+
+    <h2>Our Services</h2>
+
+    <div class="service-grid">
+
+        <div class="service-box">
+            <h3>Computer Repair</h3>
+            <p>Professional computer and laptop repair services.</p>
+        </div>
+
+        <div class="service-box">
+            <h3>CCTV Installation</h3>
+            <p>Complete CCTV installation and security solutions.</p>
+        </div>
+
+        <div class="service-box">
+            <h3>Networking</h3>
+            <p>Reliable networking solutions for offices and homes.</p>
+        </div>
+
+        <div class="service-box">
+            <h3>Printer Service</h3>
+            <p>Printer installation, maintenance and support.</p>
+        </div>
+
+    </div>
+
+    <p class="services-more">
+        <a href="services.html">See all 9 services &rarr;</a>
+    </p>
+
+</section>
+
+
+<!-- =====================================================
+     CONTACT
+===================================================== -->
+
+<section class="contact" id="contact">
+
+    <h2>Contact Us</h2>
+
+    <p>
+        M.Tech Ahmedabad Computer Store<br>
+        Contact us for laptops, desktops, CCTV,
+        printers and computer accessories.<br><br>
+        <a href="tel:+917383037521">&#128222; +91 73830 37521</a>
+        &nbsp;&nbsp;
+        <a href="https://wa.me/917383037521" target="_blank" rel="noopener noreferrer">&#128172; WhatsApp</a>
+        &nbsp;&nbsp;
+        <a href="contact.html">&#9993;&#65039; Contact page</a>
+    </p>
+
+</section>
+
+</main>
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer class="site-footer">
+
+<div class="footer-container">
+
+<div class="footer-brand">
+
+<h2>M.Tech Ahmedabad</h2>
+
+<p>
+Laptops, desktops, CCTV, printers, networking and
+accessories with reliable technical support in Ahmedabad.
+</p>
+
+<div class="footer-brands">
+<span>Laptops</span>
+<span>Desktops</span>
+<span>CCTV</span>
+<span>Printers</span>
+<span>Networking</span>
+<span>Accessories</span>
+</div>
+
+</div>
+
+<div class="footer-column">
+
+<h3>Quick Links</h3>
+
+<a href="index.html">Home</a>
+<a href="products.html">Products</a>
+<a href="services.html">Services</a>
+<a href="contact.html">Contact</a>
+<a href="about.html">About</a>
+
+</div>
+
+<div class="footer-column">
+
+<h3>Contact</h3>
+
+<!-- TODO: add the full street address + PIN code here once confirmed. -->
+
+<a href="tel:+917383037521">&#128222; +91 73830 37521</a>
+<a href="mailto:info@mtechahmedabad.com">&#9993;&#65039; info@mtechahmedabad.com</a>
+<a href="https://wa.me/917383037521" target="_blank" rel="noopener noreferrer">&#128172; WhatsApp</a>
+<a href="https://instagram.com/mtechahmedabad" target="_blank" rel="noopener noreferrer">&#128247; Instagram</a>
+
+<a class="footer-map" href="https://maps.app.goo.gl/6pT45zfBXSbPrRMz9" target="_blank" rel="noopener noreferrer">
+&#128205; Get Directions
+</a>
+
+</div>
+
+</div>
+
+<div class="footer-bottom">
+
+<p>&copy; 2026 <strong>M.Tech</strong> Ahmedabad Computer Store</p>
+
+<p>
+<a href="tel:+917383037521">&#128222; +91 73830 37521</a>
+&nbsp;|&nbsp;
+<a href="mailto:info@mtechahmedabad.com">&#9993;&#65039; info@mtechahmedabad.com</a>
+</p>
+
+</div>
+
+</footer>
+
+
+
+
+<!-- ===================== SCRIPTS ===================== -->
+
+<script src="assets/menu.js"></script>
+<script src="assets/products.js"></script>
+
+</body>
+</html>
