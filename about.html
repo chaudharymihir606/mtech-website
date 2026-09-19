@@ -2,45 +2,25 @@
 <html lang="en">
 
 <head>
+<!-- ===== Security hardening ===== -->
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+<script>
+/* Basic clickjacking protection: break out of iframes */
+if (window.top !== window.self) { window.top.location = window.self.location; }
+</script>
 
-<!-- ===================== BASICS ===================== -->
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<!-- ===================== SECURITY ===================== -->
-<meta name="referrer" content="strict-origin-when-cross-origin">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' https: data:; connect-src 'none'; form-action 'none'; base-uri 'none'; object-src 'none'; frame-src 'none'; upgrade-insecure-requests">
+<title>M.Tech | About Us</title>
 
-<!-- ===================== SEO ===================== -->
-<title>About Us | M.Tech Ahmedabad</title>
-
-<meta name="description" content="About M.Tech Ahmedabad Computer Store - laptops, desktops, CCTV, printers and accessories, with practical advice and reliable technical support.">
-
-<link rel="canonical" href="https://www.mtechahmedabad.com/about.html">
-
-<meta name="theme-color" content="#050816">
-<meta name="robots" content="index, follow">
-
-<meta property="og:type" content="website">
-<meta property="og:site_name" content="M.Tech Ahmedabad">
-<meta property="og:title" content="About Us | M.Tech Ahmedabad">
-<meta property="og:description" content="M.Tech is a computer and technology store in Ahmedabad offering laptops, desktops, CCTV, printers and accessories.">
-<meta property="og:url" content="https://www.mtechahmedabad.com/about.html">
-<meta property="og:image" content="https://www.mtechahmedabad.com/logoo.png">
-<meta name="twitter:card" content="summary">
-
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23050816'/%3E%3Ctext x='16' y='23' font-family='Arial,Helvetica,sans-serif' font-size='19' font-weight='bold' fill='%2300d4ff' text-anchor='middle'%3EM%3C/text%3E%3C/svg%3E">
-
-<!-- ===================== FONTS ===================== -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
 <style>
 
-/* =====================================================
-   BASIC
-===================================================== */
+/* ================= BASIC ================= */
 
 *{
     margin:0;
@@ -59,71 +39,7 @@ body{
     overflow-x:hidden;
 }
 
-img{
-    max-width:100%;
-}
-
-
-/* =====================================================
-   ACCESSIBILITY HELPERS
-===================================================== */
-
-.skip-link{
-    position:absolute;
-    left:-9999px;
-    top:0;
-    z-index:2000;
-    padding:12px 18px;
-    border-radius:0 0 10px 0;
-    background:#00d4ff;
-    color:#050816;
-    font-weight:700;
-    text-decoration:none;
-}
-
-.skip-link:focus{
-    left:0;
-}
-
-a:focus-visible,
-button:focus-visible{
-    outline:3px solid #00d4ff;
-    outline-offset:3px;
-    border-radius:6px;
-}
-
-.sr-only{
-    position:absolute;
-    width:1px;
-    height:1px;
-    padding:0;
-    margin:-1px;
-    overflow:hidden;
-    clip:rect(0,0,0,0);
-    white-space:nowrap;
-    border:0;
-}
-
-@media(prefers-reduced-motion:reduce){
-
-    html{
-        scroll-behavior:auto;
-    }
-
-    *,
-    *::before,
-    *::after{
-        animation-duration:.001ms!important;
-        animation-iteration-count:1!important;
-        transition-duration:.001ms!important;
-        scroll-behavior:auto!important;
-    }
-}
-
-
-/* =====================================================
-   BACKGROUND GLOW
-===================================================== */
+/* ================= BACKGROUND GLOW ================= */
 
 body::before{
     content:"";
@@ -135,7 +51,6 @@ body::before{
     background:#00bfff30;
     filter:blur(180px);
     z-index:-1;
-    pointer-events:none;
 }
 
 body::after{
@@ -148,13 +63,9 @@ body::after{
     background:#7c3aed40;
     filter:blur(180px);
     z-index:-1;
-    pointer-events:none;
 }
 
-
-/* =====================================================
-   HEADER
-===================================================== */
+/* ================= HEADER ================= */
 
 header{
     display:flex;
@@ -162,7 +73,6 @@ header{
     align-items:center;
     padding:22px 8%;
     background:rgba(255,255,255,0.05);
-    -webkit-backdrop-filter:blur(20px);
     backdrop-filter:blur(20px);
     border-bottom:1px solid rgba(255,255,255,0.1);
     position:sticky;
@@ -170,40 +80,14 @@ header{
     z-index:1000;
 }
 
-.brand{
-    display:flex;
-    align-items:center;
-    gap:10px;
-    flex-shrink:0;
+.logo{
+    font-size:28px;
+    font-weight:bold;
     color:white;
-    text-decoration:none;
 }
 
-.brand-logo{
-    display:block;
-    width:100px;
-    height:auto;
-    max-width:40vw;
-}
-
-.brand-text{
-    display:none;
-    font-size:26px;
-    font-weight:700;
-    color:white;
-    white-space:nowrap;
-}
-
-.brand-text span{
+.logo span{
     color:#00d4ff;
-}
-
-html.no-logo .brand-logo{
-    display:none;
-}
-
-html.no-logo .brand-text{
-    display:inline-block;
 }
 
 nav{
@@ -218,18 +102,12 @@ nav a{
     transition:0.3s;
 }
 
-nav a:hover{
+nav a:hover,
+nav a.active{
     color:#00d4ff;
 }
 
-nav a[aria-current="page"]{
-    color:#00d4ff;
-}
-
-
-/* =====================================================
-   HERO
-===================================================== */
+/* ================= HERO ================= */
 
 .hero{
     min-height:620px;
@@ -260,12 +138,9 @@ nav a[aria-current="page"]{
 .hero h1{
     font-size:68px;
     line-height:1.08;
-    overflow-wrap:break-word;
     background:linear-gradient(90deg,#ffffff,#00d4ff,#7c3aed);
     -webkit-background-clip:text;
-    background-clip:text;
     -webkit-text-fill-color:transparent;
-    color:transparent;
     margin-bottom:25px;
 }
 
@@ -277,10 +152,7 @@ nav a[aria-current="page"]{
     line-height:1.8;
 }
 
-
-/* =====================================================
-   COMMON
-===================================================== */
+/* ================= COMMON ================= */
 
 .section{
     width:90%;
@@ -305,7 +177,6 @@ nav a[aria-current="page"]{
 .section-heading h2{
     font-size:42px;
     margin-bottom:16px;
-    overflow-wrap:break-word;
 }
 
 .section-heading p{
@@ -315,10 +186,7 @@ nav a[aria-current="page"]{
     line-height:1.8;
 }
 
-
-/* =====================================================
-   STORY
-===================================================== */
+/* ================= STORY ================= */
 
 .story-grid{
     display:grid;
@@ -331,7 +199,6 @@ nav a[aria-current="page"]{
     min-height:430px;
     padding:45px;
     border-radius:30px;
-
     background:
         linear-gradient(
             135deg,
@@ -339,9 +206,7 @@ nav a[aria-current="page"]{
             rgba(124,58,237,0.12)
         ),
         rgba(255,255,255,0.04);
-
     border:1px solid rgba(255,255,255,0.1);
-    -webkit-backdrop-filter:blur(20px);
     backdrop-filter:blur(20px);
     position:relative;
     overflow:hidden;
@@ -356,7 +221,6 @@ nav a[aria-current="page"]{
     font-weight:bold;
     color:rgba(0,212,255,0.035);
     line-height:1;
-    pointer-events:none;
 }
 
 .story-card h3{
@@ -390,10 +254,7 @@ nav a[aria-current="page"]{
     font-weight:bold;
 }
 
-
-/* =====================================================
-   STATS
-===================================================== */
+/* ================= STATS ================= */
 
 .stats{
     width:90%;
@@ -410,7 +271,6 @@ nav a[aria-current="page"]{
     border-radius:22px;
     background:rgba(255,255,255,0.05);
     border:1px solid rgba(255,255,255,0.1);
-    -webkit-backdrop-filter:blur(20px);
     backdrop-filter:blur(20px);
     transition:0.35s;
 }
@@ -432,10 +292,7 @@ nav a[aria-current="page"]{
     font-size:14px;
 }
 
-
-/* =====================================================
-   VALUES
-===================================================== */
+/* ================= VALUES ================= */
 
 .value-grid{
     display:grid;
@@ -449,7 +306,6 @@ nav a[aria-current="page"]{
     border-radius:24px;
     background:rgba(255,255,255,0.05);
     border:1px solid rgba(255,255,255,0.1);
-    -webkit-backdrop-filter:blur(20px);
     backdrop-filter:blur(20px);
     transition:0.4s;
 }
@@ -482,10 +338,7 @@ nav a[aria-current="page"]{
     font-size:14px;
 }
 
-
-/* =====================================================
-   OFFER
-===================================================== */
+/* ================= OFFER ================= */
 
 .offer-grid{
     display:grid;
@@ -518,21 +371,16 @@ nav a[aria-current="page"]{
     font-size:14px;
 }
 
-
-/* =====================================================
-   WHY M.TECH
-===================================================== */
+/* ================= WHY M-TECH ================= */
 
 .why-section{
     padding:70px 6%;
     border-radius:35px;
-
     background:linear-gradient(
         135deg,
         rgba(0,212,255,0.08),
         rgba(124,58,237,0.08)
     );
-
     border:1px solid rgba(255,255,255,0.1);
 }
 
@@ -574,10 +422,7 @@ nav a[aria-current="page"]{
     font-size:14px;
 }
 
-
-/* =====================================================
-   CTA
-===================================================== */
+/* ================= CTA ================= */
 
 .cta{
     width:90%;
@@ -594,7 +439,6 @@ nav a[aria-current="page"]{
 .cta h2{
     font-size:45px;
     margin-bottom:15px;
-    overflow-wrap:break-word;
 }
 
 .cta p{
@@ -603,8 +447,7 @@ nav a[aria-current="page"]{
     line-height:1.7;
 }
 
-.cta .cta-btn{
-    display:inline-block;
+.cta button{
     padding:14px 30px;
     border:none;
     border-radius:30px;
@@ -612,14 +455,14 @@ nav a[aria-current="page"]{
     color:#111;
     font-weight:bold;
     cursor:pointer;
-    text-decoration:none;
     transition:0.3s;
 }
 
-.cta .cta-btn:hover{
+.cta button:hover{
     transform:translateY(-3px) scale(1.03);
 }
 
+/* ================= FOOTER ================= */
 
 /* =====================================================
    FOOTER (UNIFIED ACROSS ALL PAGES)
@@ -647,9 +490,7 @@ nav a[aria-current="page"]{
     margin-bottom:10px;
     background:linear-gradient(90deg,#ffffff,#00d4ff);
     -webkit-background-clip:text;
-    background-clip:text;
     -webkit-text-fill-color:transparent;
-    color:transparent;
 }
 
 .footer-brand>p{
@@ -699,11 +540,11 @@ nav a[aria-current="page"]{
     font-size:13px;
     line-height:1.7;
     transition:.3s;
-    overflow-wrap:anywhere;
 }
 
 .footer-column a:hover{
     color:#00d4ff;
+    transform:translateX(3px);
 }
 
 .footer-column p{
@@ -711,7 +552,6 @@ nav a[aria-current="page"]{
     font-size:13px;
     line-height:1.9;
     margin:0 0 4px;
-    overflow-wrap:anywhere;
 }
 
 .footer-map{
@@ -738,15 +578,6 @@ nav a[aria-current="page"]{
     color:#737d8e;
     font-size:11px;
     margin:0;
-}
-
-.footer-bottom a{
-    color:#737d8e;
-    text-decoration:none;
-}
-
-.footer-bottom a:hover{
-    color:#00d4ff;
 }
 
 .footer-bottom strong{
@@ -794,10 +625,7 @@ nav a[aria-current="page"]{
     }
 }
 
-
-/* =====================================================
-   RESPONSIVE
-===================================================== */
+/* ================= MOBILE ================= */
 
 @media(max-width:900px){
 
@@ -824,6 +652,7 @@ nav a[aria-current="page"]{
     .why-grid{
         grid-template-columns:1fr;
     }
+
 }
 
 @media(max-width:768px){
@@ -891,9 +720,22 @@ nav a[aria-current="page"]{
     .cta h2{
         font-size:32px;
     }
+
 }
 
 @media(max-width:430px){
+
+    .logo{
+        font-size:25px;
+    }
+
+    nav{
+        gap:12px;
+    }
+
+    nav a{
+        font-size:14px;
+    }
 
     .hero h1{
         font-size:38px;
@@ -902,67 +744,11 @@ nav a[aria-current="page"]{
     .stats{
         grid-template-columns:1fr;
     }
+
 }
 
 
-/* ===== VERY SMALL PHONES (320-360px safety) ===== */
-
-@media(max-width:360px){
-
-    .hero h1{
-        font-size:33px;
-    }
-
-    .eyebrow{
-        font-size:11px;
-        letter-spacing:1px;
-        padding:8px 14px;
-    }
-
-    .section-heading h2{
-        font-size:28px;
-    }
-
-    .story-card{
-        padding:24px;
-    }
-
-    .story-card h3,
-    .story-text h3{
-        font-size:24px;
-    }
-
-    .story-card::before{
-        font-size:240px;
-    }
-
-    .value-card,
-    .offer-box{
-        padding:24px;
-    }
-
-    .why-section{
-        padding:32px 16px;
-    }
-
-    .why-item{
-        padding:18px;
-        gap:14px;
-    }
-
-    .cta{
-        padding:45px 16px;
-    }
-
-    .cta h2{
-        font-size:27px;
-    }
-}
-
-
-/* =====================================================
-   MOBILE HEADER / HAMBURGER MENU
-===================================================== */
+/* ================= MOBILE HEADER / HAMBURGER MENU ================= */
 
 .menu-toggle{
     display:none;
@@ -1021,18 +807,15 @@ nav a[aria-current="page"]{
         align-items:stretch;
         gap:0;
         background:rgba(5,8,22,.98);
-        -webkit-backdrop-filter:blur(20px);
         backdrop-filter:blur(20px);
         border-bottom:1px solid rgba(255,255,255,.1);
         max-height:0;
         overflow:hidden;
-        visibility:hidden;
-        transition:max-height .35s ease, visibility .35s ease;
+        transition:max-height .35s ease;
     }
 
     nav.open{
-        max-height:420px;
-        visibility:visible;
+        max-height:400px;
     }
 
     nav a{
@@ -1042,6 +825,7 @@ nav a[aria-current="page"]{
         font-size:15px;
         border-top:1px solid rgba(255,255,255,.06);
     }
+
 }
 
 </style>
@@ -1051,54 +835,60 @@ nav a[aria-current="page"]{
 
 <body>
 
-<a class="skip-link" href="#main">Skip to main content</a>
 
-
-<!-- =====================================================
-     HEADER
-===================================================== -->
+<!-- ================= HEADER ================= -->
 
 <header>
 
-    <a class="brand" href="index.html" aria-label="M.Tech Ahmedabad - Home">
-        <img class="brand-logo" src="logoo.png" alt="M.Tech Ahmedabad" width="100">
-        <span class="brand-text">M<span>.Tech</span></span>
-    </a>
+    <img src="./logoo.png" alt="logoo" width="100">
 
-    <button class="menu-toggle" id="menuToggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mainNav">
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="mainNav">
         <span></span>
         <span></span>
         <span></span>
     </button>
 
-    <nav id="mainNav" aria-label="Main navigation">
-        <a href="index.html">Home</a>
-        <a href="products.html">Products</a>
-        <a href="services.html">Services</a>
-        <a href="contact.html">Contact</a>
-        <a href="about.html" aria-current="page">About</a>
-    </nav>
+    <nav id="mainNav">
+
+            <a href="home.html">
+                Home
+            </a>
+
+            <a href="products.html">
+                Products
+            </a>
+
+            <a href="services.html">
+                Services
+            </a>
+
+            <a href="contact.html">
+                Contact
+            </a>
+
+            <a href="about.html">
+                About
+            </a>
+
+        </nav>
 
 </header>
-
-
-<main id="main">
-
-
-<!-- =====================================================
-     HERO
-===================================================== -->
+<!-- ================= HERO ================= -->
 
 <section class="hero">
 
     <div class="hero-content">
 
-        <div class="eyebrow">ABOUT M.TECH</div>
+        <div class="eyebrow">
+            ABOUT M.TECH
+        </div>
 
-        <h1>Technology That Moves You Forward</h1>
+        <h1>
+            Technology That Moves You Forward
+        </h1>
 
         <p>
-            Welcome to M.Tech &mdash; your trusted destination for premium
+            Welcome to M.Tech — your trusted destination for premium
             computers, laptops, security systems, printers and modern
             technology solutions designed for everyday performance.
         </p>
@@ -1108,17 +898,19 @@ nav a[aria-current="page"]{
 </section>
 
 
-<!-- =====================================================
-     OUR STORY
-===================================================== -->
+<!-- ================= OUR STORY ================= -->
 
 <section class="section">
 
     <div class="section-heading">
 
-        <div class="small-title">Our Story</div>
+        <div class="small-title">
+            Our Story
+        </div>
 
-        <h2>Built Around Technology</h2>
+        <h2>
+            Built Around Technology
+        </h2>
 
         <p>
             We believe the right technology should make work easier,
@@ -1130,9 +922,12 @@ nav a[aria-current="page"]{
 
     <div class="story-grid">
 
+
         <div class="story-card">
 
-            <h3>M.Tech</h3>
+            <h3>
+                M.Tech
+            </h3>
 
             <p>
                 M.Tech is a computer and technology store in Ahmedabad,
@@ -1141,7 +936,7 @@ nav a[aria-current="page"]{
             </p>
 
             <p>
-                Our focus is simple &mdash; bring together reliable products,
+                Our focus is simple — bring together reliable products,
                 useful technology and dependable support in one place.
             </p>
 
@@ -1150,11 +945,13 @@ nav a[aria-current="page"]{
 
         <div class="story-text">
 
-            <h3>Technology Made Simple.</h3>
+            <h3>
+                Technology Made Simple.
+            </h3>
 
             <p>
                 Choosing technology can sometimes feel complicated.
-                That is why M.Tech focuses on keeping the experience
+                That is why     M.Tech focuses on keeping the experience
                 simple, clear and customer-friendly.
             </p>
 
@@ -1174,53 +971,83 @@ nav a[aria-current="page"]{
 
         </div>
 
+
     </div>
 
 </section>
 
 
-<!-- =====================================================
-     STATS
-===================================================== -->
-
-<h2 class="sr-only">M.Tech at a glance</h2>
+<!-- ================= STATS ================= -->
 
 <div class="stats">
 
     <div class="stat-box">
-        <h3>12+</h3>
-        <p>Featured Products</p>
+
+        <h3>
+            12+
+        </h3>
+
+        <p>
+            Featured Products
+        </p>
+
     </div>
 
-    <div class="stat-box">
-        <h3>6</h3>
-        <p>Technology Categories</p>
-    </div>
 
     <div class="stat-box">
-        <h3>9</h3>
-        <p>Core Services</p>
+
+        <h3>
+            5+
+        </h3>
+
+        <p>
+            Technology Categories
+        </p>
+
     </div>
 
+
     <div class="stat-box">
-        <h3>2026</h3>
-        <p>Growing With Technology</p>
+
+        <h3>
+            4
+        </h3>
+
+        <p>
+            Core Services
+        </p>
+
+    </div>
+
+
+    <div class="stat-box">
+
+        <h3>
+            2026
+        </h3>
+
+        <p>
+            Growing With Technology
+        </p>
+
     </div>
 
 </div>
 
 
-<!-- =====================================================
-     OUR VALUES
-===================================================== -->
+<!-- ================= OUR VALUES ================= -->
 
 <section class="section">
 
     <div class="section-heading">
 
-        <div class="small-title">What We Believe</div>
+        <div class="small-title">
+            What We Believe
+        </div>
 
-        <h2>Our Core Values</h2>
+        <h2>
+            Our Core Values
+        </h2>
 
         <p>
             The principles behind the way we choose products,
@@ -1232,11 +1059,16 @@ nav a[aria-current="page"]{
 
     <div class="value-grid">
 
+
         <div class="value-card">
 
-            <div class="icon" aria-hidden="true">&#9889;</div>
+            <div class="icon">
+                ⚡
+            </div>
 
-            <h3>Performance</h3>
+            <h3>
+                Performance
+            </h3>
 
             <p>
                 We focus on technology that delivers smooth,
@@ -1248,9 +1080,13 @@ nav a[aria-current="page"]{
 
         <div class="value-card">
 
-            <div class="icon" aria-hidden="true">&#9670;</div>
+            <div class="icon">
+                ◆
+            </div>
 
-            <h3>Quality</h3>
+            <h3>
+                Quality
+            </h3>
 
             <p>
                 We believe reliable technology creates better
@@ -1262,9 +1098,13 @@ nav a[aria-current="page"]{
 
         <div class="value-card">
 
-            <div class="icon" aria-hidden="true">&#10003;</div>
+            <div class="icon">
+                ✓
+            </div>
 
-            <h3>Trust</h3>
+            <h3>
+                Trust
+            </h3>
 
             <p>
                 Clear information, helpful support and a customer-first
@@ -1273,22 +1113,25 @@ nav a[aria-current="page"]{
 
         </div>
 
+
     </div>
 
 </section>
 
 
-<!-- =====================================================
-     WHAT WE OFFER
-===================================================== -->
+<!-- ================= WHAT WE OFFER ================= -->
 
 <section class="section">
 
     <div class="section-heading">
 
-        <div class="small-title">What We Offer</div>
+        <div class="small-title">
+            What We Offer
+        </div>
 
-        <h2>Everything For Your Setup</h2>
+        <h2>
+            Everything For Your Setup
+        </h2>
 
         <p>
             From everyday computing to complete technology solutions,
@@ -1300,56 +1143,84 @@ nav a[aria-current="page"]{
 
     <div class="offer-grid">
 
+
         <div class="offer-box">
-            <h3>Laptops &amp; Desktops</h3>
+
+            <h3>
+                Laptops & Desktops
+            </h3>
+
             <p>
                 Reliable computing solutions for students,
                 professionals, offices, creators and gaming enthusiasts.
             </p>
+
         </div>
 
+
         <div class="offer-box">
-            <h3>CCTV &amp; Security</h3>
+
+            <h3>
+                CCTV & Security
+            </h3>
+
             <p>
                 CCTV systems and security solutions for homes,
                 shops, offices and business environments.
             </p>
+
         </div>
 
+
         <div class="offer-box">
-            <h3>Printers</h3>
+
+            <h3>
+                Printers
+            </h3>
+
             <p>
                 Practical printing solutions for documents,
                 colour printing, offices and everyday requirements.
             </p>
+
         </div>
 
+
         <div class="offer-box">
-            <h3>Accessories</h3>
+
+            <h3>
+                Accessories
+            </h3>
+
             <p>
                 Useful computer accessories including keyboards,
                 mice, headsets and other essential peripherals.
             </p>
+
         </div>
+
 
     </div>
 
 </section>
 
 
-<!-- =====================================================
-     WHY M.TECH
-===================================================== -->
+<!-- ================= WHY M.TECH ================= -->
 
 <section class="section">
 
     <div class="why-section">
 
+
         <div class="section-heading">
 
-            <div class="small-title">Why M.Tech</div>
+            <div class="small-title">
+                Why M.Tech
+            </div>
 
-            <h2>More Than Just Technology</h2>
+            <h2>
+                More Than Just Technology
+            </h2>
 
             <p>
                 We aim to make every technology decision easier,
@@ -1361,16 +1232,24 @@ nav a[aria-current="page"]{
 
         <div class="why-grid">
 
+
             <div class="why-item">
 
-                <div class="check" aria-hidden="true">&#10003;</div>
+                <div class="check">
+                    ✓
+                </div>
 
                 <div>
-                    <h3>Wide Technology Range</h3>
+
+                    <h3>
+                        Wide Technology Range
+                    </h3>
+
                     <p>
                         Computers, laptops, CCTV, printers and
                         accessories in one convenient destination.
                     </p>
+
                 </div>
 
             </div>
@@ -1378,14 +1257,21 @@ nav a[aria-current="page"]{
 
             <div class="why-item">
 
-                <div class="check" aria-hidden="true">&#10003;</div>
+                <div class="check">
+                    ✓
+                </div>
 
                 <div>
-                    <h3>Customer Focused</h3>
+
+                    <h3>
+                        Customer Focused
+                    </h3>
+
                     <p>
                         We keep technology recommendations simple,
                         practical and easy to understand.
                     </p>
+
                 </div>
 
             </div>
@@ -1393,14 +1279,21 @@ nav a[aria-current="page"]{
 
             <div class="why-item">
 
-                <div class="check" aria-hidden="true">&#10003;</div>
+                <div class="check">
+                    ✓
+                </div>
 
                 <div>
-                    <h3>Complete Solutions</h3>
+
+                    <h3>
+                        Complete Solutions
+                    </h3>
+
                     <p>
                         Product selection and technology services
                         designed for different needs.
                     </p>
+
                 </div>
 
             </div>
@@ -1408,17 +1301,25 @@ nav a[aria-current="page"]{
 
             <div class="why-item">
 
-                <div class="check" aria-hidden="true">&#10003;</div>
+                <div class="check">
+                    ✓
+                </div>
 
                 <div>
-                    <h3>Reliable Support</h3>
+
+                    <h3>
+                        Reliable Support
+                    </h3>
+
                     <p>
                         Computer repair, CCTV installation,
                         networking and printer support.
                     </p>
+
                 </div>
 
             </div>
+
 
         </div>
 
@@ -1427,29 +1328,32 @@ nav a[aria-current="page"]{
 </section>
 
 
-<!-- =====================================================
-     CTA
-===================================================== -->
+<!-- ================= CTA ================= -->
 
 <section class="cta">
 
     <div class="cta-content">
 
-        <h2>Ready To Upgrade Your Technology?</h2>
+        <h2>
+            Ready To Upgrade Your Technology?
+        </h2>
 
         <p>
             Explore our products and discover the right technology
             for your home, work, business or entertainment setup.
         </p>
 
-        <a class="cta-btn" href="products.html">Explore Products</a>
+  
+        <button onclick="goToProducts()">
+            Explore Products
+        </button>
 
     </div>
 
 </section>
 
-</main>
 
+<!-- ================= FOOTER ================= -->
 
 <!-- =====================================================
      FOOTER
@@ -1461,7 +1365,9 @@ nav a[aria-current="page"]{
 
 <div class="footer-brand">
 
-<h2>M.Tech Ahmedabad</h2>
+<h2>
+M.Tech Ahmedabad
+</h2>
 
 <p>
 Laptops, desktops, CCTV, printers, networking and
@@ -1481,9 +1387,11 @@ accessories with reliable technical support in Ahmedabad.
 
 <div class="footer-column">
 
-<h3>Quick Links</h3>
+<h3>
+Quick Links
+</h3>
 
-<a href="index.html">Home</a>
+<a href="home.html">Home</a>
 <a href="products.html">Products</a>
 <a href="services.html">Services</a>
 <a href="contact.html">Contact</a>
@@ -1493,17 +1401,15 @@ accessories with reliable technical support in Ahmedabad.
 
 <div class="footer-column">
 
-<h3>Contact</h3>
+<h3>
+Contact
+</h3>
 
-<!-- TODO: add the full street address + PIN code here once confirmed. -->
+<p>📞 +91 73830 37521</p>
+<p>✉️ info@mtechahmedabad.com</p>
 
-<a href="tel:+917383037521">&#128222; +91 73830 37521</a>
-<a href="mailto:info@mtechahmedabad.com">&#9993;&#65039; info@mtechahmedabad.com</a>
-<a href="https://wa.me/917383037521" target="_blank" rel="noopener noreferrer">&#128172; WhatsApp</a>
-<a href="https://instagram.com/mtechahmedabad" target="_blank" rel="noopener noreferrer">&#128247; Instagram</a>
-
-<a class="footer-map" href="https://maps.app.goo.gl/6pT45zfBXSbPrRMz9" target="_blank" rel="noopener noreferrer">
-&#128205; Get Directions
+<a class="footer-map" href="https://maps.app.goo.gl/6pT45zfBXSbPrRMz9?g_st=ac" target="_blank" rel="noopener noreferrer">
+📍 Get Directions
 </a>
 
 </div>
@@ -1512,22 +1418,55 @@ accessories with reliable technical support in Ahmedabad.
 
 <div class="footer-bottom">
 
-<p>&copy; 2026 <strong>M.Tech</strong> Ahmedabad Computer Store</p>
+<p>© 2026 <strong>M.Tech</strong> Ahmedabad Computer Store</p>
 
-<p>
-<a href="tel:+917383037521">&#128222; +91 73830 37521</a>
-&nbsp;|&nbsp;
-<a href="mailto:info@mtechahmedabad.com">&#9993;&#65039; info@mtechahmedabad.com</a>
-</p>
+<p>📞 +91-7383037521 &nbsp;|&nbsp; ✉️ info@mtechahmedabad.com</p>
 
 </div>
 
 </footer>
 
 
-<!-- ===================== SCRIPTS ===================== -->
+<!-- ================= JAVASCRIPT ================= -->
 
-<script src="assets/menu.js"></script>
+<script>
 
+function goToProducts(){
+
+    window.location.href = "products.html";
+
+}
+
+</script>
+
+
+
+<script>
+/* ================= MOBILE HAMBURGER MENU ================= */
+(function(){
+    var toggle = document.getElementById("menuToggle");
+    var nav = document.getElementById("mainNav");
+
+    if(toggle && nav){
+
+        toggle.addEventListener("click", function(){
+            var isOpen = nav.classList.toggle("open");
+            toggle.classList.toggle("active", isOpen);
+            toggle.setAttribute("aria-expanded", isOpen ? "true" : "false");
+        });
+
+        /* Close menu after clicking a nav link (mobile) */
+        nav.querySelectorAll("a").forEach(function(link){
+            link.addEventListener("click", function(){
+                nav.classList.remove("open");
+                toggle.classList.remove("active");
+                toggle.setAttribute("aria-expanded", "false");
+            });
+        });
+
+    }
+})();
+</script>
 </body>
+
 </html>
